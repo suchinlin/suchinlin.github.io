@@ -8,14 +8,36 @@ body {
   --spacing-xlarge: 120px;
 }
 
+.social-icon {
+  margin-right: 7px;
+}
+
+.linkedin-blue {
+  color: #4875B4;
+}
+
 .content {
   margin: var(--spacing-large) auto;
 }
+
+.flex-align {
+  display: flex;
+  align-items: center;
+}
+
 
 .flex-space-between-aligned {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.flex-top-align {
+  align-items: initial;
+}
+
+.flex-item-50 {
+  flex: 0 50%;
 }
 
 .srow + .srow {
@@ -78,5 +100,9 @@ body {
 
   .flex-space-between-aligned {
     flex-direction: column;
+  }
+
+  .flex-item-50 {
+    width: 100%;
   }
 }
