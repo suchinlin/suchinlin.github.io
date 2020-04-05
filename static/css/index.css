@@ -1,11 +1,13 @@
 body {
   font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .home-page {
   margin: 0 auto;
   max-width: 1024px;
-  padding: 80px 0;
+  padding: 80px 20px;
 }
 
 .navigation-list {
@@ -36,7 +38,7 @@ body {
 }
 
 .home-intro {
-  margin-top: 25px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,4 +50,20 @@ body {
 
 .home-intro-text {
   margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .home-intro {
+    flex-direction: column;
+  }
+
+  .home-intro-text {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .navigation-list-item {
+    font-size: 20px;
+    padding: 0 10px;
+  }
 }
