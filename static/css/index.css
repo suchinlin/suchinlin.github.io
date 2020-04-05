@@ -1,69 +1,10 @@
-body {
-  font-family: 'DM Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.home-page {
-  margin: 0 auto;
-  max-width: 1024px;
-  padding: 80px 20px;
-}
-
-.navigation-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: right;
-}
-
-.navigation-list-item {
-  display: inline-block;
-  font-size: 24px;
-  text-transform: uppercase;
-  padding: 0 15px;
-}
-
-.navigation-list-item:hover {
-  text-decoration: underline;
-}
-
-.navigation-list-item-link {
-  color: black;
-  text-decoration: none;
-}
-
-.navigation-list-item-link:hover {
-  color: black;
-}
-
 .home-intro {
   margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .home-intro-image {
   border-radius: 50%;
 }
 
-.home-intro-text {
-  margin-left: 100px;
-}
-
 @media (max-width: 768px) {
-  .home-intro {
-    flex-direction: column;
-  }
-
-  .home-intro-text {
-    margin-left: 0;
-    margin-top: 20px;
-  }
-
-  .navigation-list-item {
-    font-size: 20px;
-    padding: 0 10px;
-  }
 }
