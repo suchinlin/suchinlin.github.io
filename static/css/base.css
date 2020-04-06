@@ -1,12 +1,15 @@
 /* Includes reusable component styles like navigation */
 
 body {
+  --spacing-normal: 30px;
   --spacing-large: 60px;
   --spacing-xlarge: 120px;
   --green: #49BDAC;
   --green-darken: #389b8c;
   --white: #FFFFFF;
   --light-grey: #D3D3D3;
+  --grey: #b9b9b9;
+  --baymade-orange: #FF7400;
   --black: #261814;
   --font-weight-normal: 400;
   --font-weight-bold: 500;
@@ -19,6 +22,10 @@ body {
 
 p {
   font-size: 18px;
+}
+
+h2 {
+  margin: 10px 0;
 }
 
 a {
@@ -64,8 +71,16 @@ a:hover {
   color: var(--light-grey);
 }
 
+.grey {
+  color: var(--grey);
+}
+
 .green {
   color: var(--green);
+}
+
+.baymade-orange {
+  color: var(--baymade-orange);
 }
 
 .btn-primary,
@@ -134,8 +149,20 @@ a:hover {
   flex: 0 50%;
 }
 
+.flex-item-33 {
+  flex: 0 33.33%;
+}
+
 .flex-item-40 {
   flex: 0 40%;
+}
+
+.large-top-margin {
+  margin-top: calc(var(--spacing-large) * 1.5);
+}
+
+.xlarge-top-margin {
+  margin-top: var(--spacing-xlarge);
 }
 
 .xxlarge-top-margin {
@@ -153,6 +180,14 @@ a:hover {
 
 .flex-space-right {
   margin-left: 50px;
+}
+
+.flex-space-left img {
+  width: 100%;
+}
+
+.flex-space-right img {
+  width: 100%;
 }
 
 .navigation {
@@ -194,10 +229,32 @@ a:hover {
   background-color: var(--green);
 }
 
+.footer {
+  font-size: 18px;
+  padding: 20px 0;
+  border-top: 1px solid var(--light-grey);
+}
+
+.footer-social-icon {
+  color: var(--black);
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-social-icon:hover {
+  text-decoration: none;
+  color: var(--green);
+}
+
 @media (max-width: 768px) {
   .navigation-list-item {
     font-size: 18px;
     padding: 0 10px;
+  }
+
+  .content {
+    padding: var(--spacing-normal) 15px;
   }
 
   .flex-space-left {
@@ -218,23 +275,16 @@ a:hover {
   .flex-item-50 {
     width: 100%;
   }
-}
 
+  .large-top-margin {
+    margin-top: var(--spacing-normal);
+  }
 
-.footer {
-  font-size: 18px;
-  padding: 20px 0;
-  border-top: 1px solid var(--light-grey);
-}
+  .xlarge-top-margin {
+    margin-top: var(--spacing-large);
+  }
 
-.footer-social-icon {
-  color: var(--black);
-  padding: 0 10px;
-  display: inline-flex;
-  align-items: center;
-}
-
-.footer-social-icon:hover {
-  text-decoration: none;
-  color: var(--green);
+  .xxlarge-top-margin {
+    margin-top: calc(var(--spacing-large) * 1.5);
+  }
 }

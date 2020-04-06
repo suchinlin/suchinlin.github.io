@@ -1,0 +1,16 @@
+.baymade-quality-img {
+  width: 375px;
+  margin: 30px auto;
+  display: block;
+}
+
+.new-nav-margin {
+  margin-top: 97px;
+}
+
+
+@media (max-width: 768px) {
+  .new-nav-margin {
+    margin-top: 0;
+  }
+}

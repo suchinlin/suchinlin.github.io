@@ -20,5 +20,20 @@
   max-width: 462px;
 }
 
+.hidden-desktop {
+  display: none;
+}
+
+.hidden-mobile {
+  display: flex;
+}
+
 @media (max-width: 768px) {
+  .hidden-desktop {
+    display: flex;
+  }
+
+  .hidden-mobile {
+    display: none;
+  }
 }
