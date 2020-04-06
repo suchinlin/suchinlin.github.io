@@ -36,6 +36,14 @@ a:hover {
   margin-right: 7px;
 }
 
+.full-width {
+  width: 100%;
+}
+
+.text {
+  font-size: 18px;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -107,6 +115,10 @@ a:hover {
   align-items: center;
 }
 
+.box-shadow {
+  box-shadow: 0 2px 8px 1px var(--light-grey);
+}
+
 
 .flex-space-between-aligned {
   display: flex;
@@ -122,16 +134,20 @@ a:hover {
   flex: 0 50%;
 }
 
+.flex-item-40 {
+  flex: 0 40%;
+}
+
 .srow + .srow {
   margin-top: var(--spacing-xlarge);
 }
 
 .flex-space-left {
-  margin-right: 50px;
+  padding-right: 50px;
 }
 
 .flex-space-right {
-  margin-left: 50px;
+  padding-left: 50px;
 }
 
 .navigation {
@@ -181,12 +197,12 @@ a:hover {
 
   .flex-space-left {
     width: 100%;
-    margin-right: 0;
+    padding-right: 0;
   }
 
   .flex-space-right {
     width: 100%;
-    margin-left: 0;
+    padding-left: 0;
     margin-top: 30px;
   }
 
