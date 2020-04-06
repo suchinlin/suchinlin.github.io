@@ -143,11 +143,11 @@ a:hover {
 }
 
 .flex-space-left {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 
 .flex-space-right {
-  padding-left: 50px;
+  margin-left: 50px;
 }
 
 .navigation {
@@ -197,12 +197,12 @@ a:hover {
 
   .flex-space-left {
     width: 100%;
-    padding-right: 0;
+    margin-right: 0;
   }
 
   .flex-space-right {
     width: 100%;
-    padding-left: 0;
+    margin-left: 0;
     margin-top: 30px;
   }
 
