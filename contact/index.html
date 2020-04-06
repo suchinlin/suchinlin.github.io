@@ -6,13 +6,12 @@
     <meta name="author" content="Suchin Lin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/ionicons.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../static/css/base.css"/>
-    <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="./contact.css"/>
     <link rel="shortcut icon" type="image/png" href="../static/img/favicon.png"/>
     <title>Suchin Lin</title>
   </head>
@@ -21,17 +20,22 @@
     <nav class="navigation container">
       <ul class="navigation-list">
         <li class="navigation-list-item">
+          <a class="navigation-list-item-link" href="/">
+            Work
+          </a>
+        </li>
+        <li class="navigation-list-item">
           <a class="navigation-list-item-link" target="_blank" href="../static/resume/suchinlin.pdf">
             Resume
           </a>
         </li>
         <li class="navigation-list-item">
-          <a class="navigation-list-item-link" href="../about">
+          <a class="navigation-list-item-link" href="/about">
             About
           </a>
         </li>
         <li class="navigation-list-item">
-          <a class="navigation-list-item-link" href="../contact">
+          <a class="navigation-list-item-link" href="/contact">
             Contact
           </a>
         </li>
@@ -41,7 +45,7 @@
     <div class="container content">
       <div class="flex-space-between-aligned srow flex-top-align">
         <div class="flex-space-left flex-item-50">
-          <h1>Contact me</h1>
+          <h1>Contact Me</h1>
           <div class="contact-item">
             <a class="flex-align" href="mailto:iamsuchinlin@example.com" target="_blank">
               <ion-icon class="social-icon" name="mail-outline"></ion-icon> iamsuchinlin@gmail.com
@@ -49,7 +53,7 @@
           </div>
           <div class="contact-item">
             <a class="flex-align" href="https://www.linkedin.com/in/suchinlin" target="_blank">
-              <ion-icon class="linkedin-blue social-icon" name="logo-linkedin"></ion-icon> LinkedIn
+              <ion-icon class="social-icon" name="logo-linkedin"></ion-icon> LinkedIn
             </a>
           </div>
         </div>
@@ -62,14 +66,30 @@
               <input type="email" class="form-control" id="email" placeholder="Email">
             </div>
             <div class="form-group">
-              <textarea class="form-control" id="message" rows="3" placeholder="message"></textarea>
+              <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            <button type="submit" class="btn btn-primary btn-clear btn-lg">Submit</button>
           </form>
         </div>
       </div>
     </div>
-    <script src="./index.js"></script>
+
+    <footer class="footer">
+      <div class="container flex-space-between-aligned">
+        <div id="footer-copy"></div>
+        <div class="footer-social">
+          <a class="footer-social-icon" href="https://www.linkedin.com/in/suchinlin" target="_blank">
+            <ion-icon class="social-icon" name="logo-linkedin"></ion-icon> LinkedIn
+          </a>
+          <a class="footer-social-icon" href="mailto:iamsuchinlin@example.com" target="_blank">
+            <ion-icon class="social-icon" name="mail-outline"></ion-icon> Email
+          </a>
+        </div>
+      </div>
+      <script src="../index.js"></script>
+    </footer>
+
+    <script src="./contact.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   </body>
 </html>
