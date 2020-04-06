@@ -36,4 +36,16 @@
   .hidden-mobile {
     display: none;
   }
+
+  .home-intro {
+    margin-top: 0;
+  }
+
+  .home-intro-callout {
+    max-width: 275px;
+  }
+
+  .home-intro-info {
+    margin-bottom: 0;
+  }
 }
