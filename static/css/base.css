@@ -254,7 +254,7 @@ a:hover {
   }
 
   .content {
-    padding: var(--spacing-normal) 15px;
+    padding: var(--spacing-large) 15px;
   }
 
   .flex-space-left {
@@ -286,5 +286,9 @@ a:hover {
 
   .xxlarge-top-margin {
     margin-top: calc(var(--spacing-large) * 1.5);
+  }
+
+  .srow + .srow {
+    margin-top: var(--spacing-large);
   }
 }
