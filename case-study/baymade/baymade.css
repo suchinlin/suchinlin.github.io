@@ -8,6 +8,10 @@
   margin-top: 97px;
 }
 
+.method-item {
+  margin-top: 5px;
+}
+
 
 @media (max-width: 768px) {
   .new-nav-margin {
