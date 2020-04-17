@@ -43,23 +43,52 @@
     </nav>
     <div class="container content">
       <div class="home-intro flex-space-between-aligned">
-        <img class="home-intro-image flex-space-left" src="./static/img/headshot.png" />
-        <div class="flex-space-right">
+        <img class="home-intro-image flex-item" src="./static/img/headshot.png" />
+        <div class="flex-item">
           <h2 class="home-intro-callout">
             Hi, I’m Suchin Lin, a <span class="green">UX Designer</span>.
           </h2>
-          <p class="home-intro-info">
+          <div class="home-intro-info">
             I am a proactive, people-person who loves storytelling, sketching, organizing,
             and, most of all, getting to know people and their stories. I design satisfying
             and efficient user experiences.
-          </p>
+          </div>
         </div>
       </div>
+
+      <div class="flex-space-between-aligned xxlarge-top-margin hidden-mobile">
+        <div class="flex-item flex-item-50">
+          <div class="light-grey uppercase font-weight-bold">UX Design Client Project</div>
+          <h2 class="case-study-title">MADA Host Empowerment</h2>
+          <p>
+            Introducing an empowering host journey to hesitant hosts
+          </p>
+          <a href="/case-study/mada" class="btn btn-primary btn-lg btn-clear case-study-button">View Project</a>
+        </div>
+        <div class="flex-item flex-item-50">
+          <img class="case-study-img" src="./static/img/mada-p5.png" />
+        </div>
+      </div>
+
+      <div class="flex-space-between-aligned xxlarge-top-margin hidden-desktop">
+        <div class="flex-item flex-item-50">
+          <img class="case-study-img" src="./static/img/mada-p5.png" />
+        </div>
+        <div class="flex-item flex-item-50">
+          <div class="light-grey uppercase font-weight-bold">UX Design Client Project</div>
+          <h2 class="case-study-title">MADA Host Empowerment</h2>
+          <p>
+            Introducing an empowering host journey to hesitant hosts
+          </p>
+          <a href="/case-study/mada" class="btn btn-primary btn-lg btn-clear case-study-button">View Project</a>
+        </div>
+      </div>
+
       <div class="flex-space-between-aligned xxlarge-top-margin">
-        <div class="flex-space-left flex-item-50">
+        <div class="flex-item flex-item-50">
           <img class="case-study-img" src="./static/img/baymade-p1.png" />
         </div>
-        <div class="flex-space-right flex-item-50">
+        <div class="flex-item flex-item-50">
           <div class="light-grey uppercase font-weight-bold">UX Design Concept Project</div>
           <h2 class="case-study-title">Baymade-Beta</h2>
           <p>
@@ -70,46 +99,20 @@
         </div>
       </div>
 
-      <div class="flex-space-between-aligned xxlarge-top-margin hidden-mobile">
-        <div class="flex-space-left flex-item-50">
-          <div class="light-grey uppercase font-weight-bold">Coming soon - UX Design Client Project</div>
-          <h2 class="case-study-title">MADA Host Empowerment</h2>
-          <p>
-            Introducing an empowering host journey to hesitant hosts
-          </p>
-          <a href="#" class="btn btn-primary btn-lg btn-clear case-study-button">Coming soon</a>
-        </div>
-        <div class="flex-space-right flex-item-50">
-          <img class="case-study-img" src="./static/img/mada-p5.png" />
-        </div>
-      </div>
-
-      <div class="flex-space-between-aligned xxlarge-top-margin hidden-desktop">
-        <div class="flex-space-left flex-item-50">
-          <img class="case-study-img" src="./static/img/mada-p5.png" />
-        </div>
-        <div class="flex-space-right flex-item-50">
-          <div class="light-grey uppercase font-weight-bold">Coming soon - UX Design Client Project</div>
-          <h2 class="case-study-title">MADA Host Empowerment</h2>
-          <p>
-            Introducing an empowering host journey to hesitant hosts
-          </p>
-          <a href="#" class="btn btn-primary btn-lg btn-clear case-study-button">Coming soon</a>
-        </div>
-      </div>
-
     </div>
 
     <footer class="footer">
-      <div class="container flex-space-between-aligned">
-        <div id="footer-copy"></div>
-        <div class="footer-social">
-          <a class="footer-social-icon" href="https://www.linkedin.com/in/suchinlin" target="_blank">
-            <ion-icon class="social-icon" name="logo-linkedin"></ion-icon> LinkedIn
-          </a>
-          <a class="footer-social-icon" href="mailto:iamsuchinlin@example.com" target="_blank">
-            <ion-icon class="social-icon" name="mail-outline"></ion-icon> Email
-          </a>
+      <div class="container">
+        <div class="flex-space-between-aligned">
+          <div class="flex-item-non-fluid flex-item-50-non-fluid" id="footer-copy"></div>
+          <div class="flex-item-non-fluid flex-item-50-non-fluid text-right">
+            <a class="footer-social-icon" href="https://www.linkedin.com/in/suchinlin" target="_blank">
+              <ion-icon class="social-icon" name="logo-linkedin"></ion-icon> LinkedIn
+            </a>
+            <a class="footer-social-icon" href="mailto:iamsuchinlin@example.com" target="_blank">
+              <ion-icon class="social-icon" name="mail-outline"></ion-icon> Email
+            </a>
+          </div>
         </div>
       </div>
     </footer>

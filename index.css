@@ -2,9 +2,19 @@
   margin-top: 50px;
 }
 
+.home-intro-callout {
+  font-size: 40px;
+}
+
+.home-intro-info {
+  font-size: 32px;
+  line-height: 46px;
+}
+
 .home-intro-image {
   border-radius: 50%;
-  max-width: 200px;
+  max-width: 250px;
+  width: 100%;
 }
 
 .case-study-title {
@@ -41,10 +51,15 @@
   }
 
   .home-intro-callout {
-    max-width: 275px;
+    max-width: 240px;
   }
 
   .home-intro-info {
+    font-size: 24px;
     margin-bottom: 0;
+  }
+
+  .home-intro-image {
+    padding: 0;
   }
 }

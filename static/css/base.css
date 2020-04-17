@@ -22,10 +22,12 @@ body {
 
 p {
   font-size: 18px;
+  line-height: 36px;
+  margin-bottom: 15px;
 }
 
 h2 {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 a {
@@ -130,31 +132,55 @@ a:hover {
   align-items: center;
 }
 
+.capitalize {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
 .box-shadow {
   box-shadow: 0 2px 8px 1px var(--light-grey);
 }
 
-
 .flex-space-between-aligned {
+  margin: 0 -30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.flex-item {
+  padding: 0 30px;
 }
 
 .flex-top-align {
   align-items: initial;
 }
 
+.flex-item-100 {
+  flex: 0 100%;
+}
+
 .flex-item-50 {
   flex: 0 50%;
+}
+
+.flex-item-50-non-fluid {
+  flex: 0 50%;
+}
+
+.flex-item-non-fluid {
+  padding: 0 30px;
 }
 
 .flex-item-33 {
   flex: 0 33.33%;
 }
 
-.flex-item-40 {
-  flex: 0 40%;
+.flex-item-25 {
+  flex: 0 25%;
 }
 
 .large-top-margin {
@@ -173,20 +199,11 @@ a:hover {
   margin-top: var(--spacing-xlarge);
 }
 
-
-.flex-space-left {
-  margin-right: 50px;
-}
-
-.flex-space-right {
-  margin-left: 50px;
-}
-
-.flex-space-left img {
+.flex-item img {
   width: 100%;
 }
 
-.flex-space-right img {
+.flex-item img {
   width: 100%;
 }
 
@@ -257,23 +274,28 @@ a:hover {
     padding: var(--spacing-large) 15px;
   }
 
-  .flex-space-left {
+  .flex-item {
     width: 100%;
-    margin-right: 0;
-  }
-
-  .flex-space-right {
-    width: 100%;
+    padding: 0;
     margin-left: 0;
     margin-top: 30px;
   }
 
   .flex-space-between-aligned {
+    margin: 0;
     flex-direction: column;
   }
 
   .flex-item-50 {
     width: 100%;
+  }
+
+  .flex-item {
+    width: 100%;
+  }
+
+  .flex-item + .flex-item {
+    margin-top: var(--spacing-normal);
   }
 
   .large-top-margin {
