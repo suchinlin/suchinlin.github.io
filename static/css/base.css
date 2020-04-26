@@ -90,6 +90,10 @@ ul {
   color: var(--light-grey);
 }
 
+.video {
+  outline: none;
+}
+
 .grey {
   color: var(--grey);
 }
