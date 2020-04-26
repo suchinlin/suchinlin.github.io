@@ -3,11 +3,11 @@
 }
 
 .home-intro-callout {
-  font-size: 40px;
+  font-size: var(--font-size-large);
 }
 
 .home-intro-info {
-  font-size: 32px;
+  font-size: var(--font-size-medium);
   line-height: 46px;
 }
 
@@ -50,10 +50,6 @@
     margin-top: 0;
   }
 
-  .home-intro-callout {
-    max-width: 240px;
-  }
-
   .home-intro-info {
     font-size: 24px;
     margin-bottom: 0;
@@ -61,5 +57,9 @@
 
   .home-intro-image {
     padding: 0;
+  }
+
+  .home-intro-text {
+    display: block;
   }
 }

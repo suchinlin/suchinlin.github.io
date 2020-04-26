@@ -1,6 +1,7 @@
 /* Includes reusable component styles like navigation */
 
 body {
+  --spacing-small: 15px;
   --spacing-normal: 30px;
   --spacing-large: 60px;
   --spacing-xlarge: 120px;
@@ -11,9 +12,13 @@ body {
   --grey: #b9b9b9;
   --baymade-orange: #FF7400;
   --black: #261814;
+  --mada-red: #F05A5A;
   --font-weight-normal: 400;
   --font-weight-bold: 500;
   --font-weight-xbold: 700;
+  --font-size-normal: 18px;
+  --font-size-medium: 24px;
+  --font-size-large: 32px;
   font-family: 'DM Sans', sans-serif;
   margin: 0;
   padding: 0;
@@ -21,7 +26,7 @@ body {
 }
 
 p {
-  font-size: 18px;
+  font-size: var(--font-size-normal);
   line-height: 36px;
   margin-bottom: 15px;
 }
@@ -41,6 +46,10 @@ a:hover {
   color: var(--green);
 }
 
+ul {
+  padding: 0 18px;
+}
+
 .social-icon {
   margin-right: 7px;
 }
@@ -49,8 +58,16 @@ a:hover {
   width: 100%;
 }
 
+.two-third-width {
+  width: 66.6%;
+}
+
 .text {
   font-size: 18px;
+}
+
+.mada-red {
+  color: var(--mada-red);
 }
 
 .uppercase {
@@ -79,6 +96,10 @@ a:hover {
 
 .green {
   color: var(--green);
+}
+
+.text-color {
+  color: var(--black);
 }
 
 .baymade-orange {
@@ -183,6 +204,25 @@ a:hover {
   flex: 0 25%;
 }
 
+.pre-headline {
+  margin-bottom: 20px;
+  color: var(--grey);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+}
+
+.small-bottom-margin {
+  margin-bottom: var(--spacing-small);
+}
+
+.medium-bottom-margin {
+  margin-bottom: var(--spacing-normal);
+}
+
+.medium-top-margin {
+  margin-top: var(--spacing-large);
+}
+
 .large-top-margin {
   margin-top: calc(var(--spacing-large) * 1.5);
 }
@@ -203,8 +243,8 @@ a:hover {
   width: 100%;
 }
 
-.flex-item img {
-  width: 100%;
+.flex-item .two-third-width {
+  width: 66.6%;
 }
 
 .navigation {
@@ -268,6 +308,15 @@ a:hover {
   .navigation-list-item {
     font-size: 18px;
     padding: 0 10px;
+  }
+
+  /* On mobile we want it full width */
+  .two-third-width {
+    width: 100%;
+  }
+
+  .flex-item .two-third-width {
+    width: 100%;
   }
 
   .content {
