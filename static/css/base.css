@@ -356,7 +356,7 @@ ul {
   }
 
   .xxlarge-top-margin {
-    margin-top: calc(var(--spacing-large) * 1.5);
+    margin-top: var(--spacing-large);
   }
 
   .srow + .srow {

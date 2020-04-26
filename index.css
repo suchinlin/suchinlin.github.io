@@ -4,6 +4,16 @@
 
 .home-intro-callout {
   font-size: var(--font-size-large);
+  margin-bottom: 0;
+}
+
+.home-intro-container {
+  margin-left: 75px;
+}
+
+.intro-sub-header {
+  margin-top: 20px;
+  font-size: var(--font-size-medium);
 }
 
 .home-intro-info {
@@ -42,6 +52,10 @@
     display: flex;
   }
 
+  .home-intro-container {
+    margin-left: 0;
+  }
+
   .hidden-mobile {
     display: none;
   }
@@ -57,6 +71,7 @@
 
   .home-intro-image {
     padding: 0;
+    margin-top: 0;
   }
 
   .home-intro-text {
