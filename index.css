@@ -1,7 +1,3 @@
-.home-intro {
-  margin-top: 50px;
-}
-
 .home-intro-callout {
   font-size: var(--font-size-large);
   margin-bottom: 0;
@@ -58,10 +54,6 @@
 
   .hidden-mobile {
     display: none;
-  }
-
-  .home-intro {
-    margin-top: 0;
   }
 
   .home-intro-info {
