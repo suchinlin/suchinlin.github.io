@@ -10,12 +10,14 @@ body {
   --white: #FFFFFF;
   --light-grey: #D3D3D3;
   --grey: #b9b9b9;
+  --dark-grey: #939393;
   --baymade-orange: #FF7400;
   --black: #261814;
   --mada-red: #F05A5A;
   --font-weight-normal: 400;
   --font-weight-bold: 500;
   --font-weight-xbold: 700;
+  --font-size-xsmall: 12px;
   --font-size-small: 16px;
   --font-size-normal: 18px;
   --font-size-medium: 24px;
@@ -26,10 +28,35 @@ body {
   color: var(--black);
 }
 
+.carousel-indicators .active {
+  background-color: var(--green);
+}
+.carousel-indicators li {
+  background-color: var(--grey);
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23b9b9b9' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23b9b9b9' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
 p {
   font-size: var(--font-size-normal);
-  line-height: 36px;
+  line-height: 40px;
   margin-bottom: 15px;
+}
+
+.small-font {
+  font-size: var(--font-size-small);
+  line-height: 32px;
+}
+
+.xsmall-font {
+  font-size: var(--font-size-xsmall);
+  line-height: 28px;
 }
 
 h2 {
@@ -67,6 +94,10 @@ ul {
   font-size: 18px;
 }
 
+.sub-content {
+  padding: 0 65px;
+}
+
 .mada-red {
   color: var(--mada-red);
 }
@@ -98,6 +129,10 @@ ul {
 
 .grey {
   color: var(--grey);
+}
+
+.dark-grey {
+  color: var(--dark-grey);
 }
 
 .green {
@@ -154,6 +189,10 @@ ul {
   padding: var(--spacing-xlarge) 0;
 }
 
+.divider {
+  background: var(--grey);
+}
+
 .flex-align {
   display: flex;
   align-items: center;
@@ -202,6 +241,10 @@ ul {
   padding: 0 30px;
 }
 
+.flex-item-66 {
+  flex: 0 66.66%;
+}
+
 .flex-item-33 {
   flex: 0 33.33%;
 }
@@ -223,6 +266,14 @@ ul {
 
 .medium-bottom-margin {
   margin-bottom: var(--spacing-normal);
+}
+
+.large-bottom-margin {
+  margin-bottom: calc(var(--spacing-large) * 1.5);
+}
+
+.small-top-margin {
+  margin-top: var(--spacing-normal);
 }
 
 .medium-top-margin {
@@ -336,6 +387,10 @@ ul {
     margin-top: 30px;
   }
 
+  .sub-content {
+    padding: 0;
+  }
+
   .flex-space-between-aligned {
     margin: 0;
     flex-direction: column;
@@ -351,6 +406,10 @@ ul {
 
   .flex-item + .flex-item {
     margin-top: var(--spacing-normal);
+  }
+
+  .large-bottom-margin {
+    margin-bottom: var(--spacing-normal);
   }
 
   .large-top-margin {
