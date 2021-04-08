@@ -3,7 +3,35 @@ html {
 }
 
 body {
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem; /* 16px */
-  margin: 0;
-  padding: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 150px;
 }
+
+/*:global(.sampleClass) {
+}*/
+
+:root {
+  /* Colors */
+  --red: #f46b8b;
+  --text-dark: #303030;
+  --text-light: #454545;
+  --pink: #f3d1d9;
+  --baby-pink: #ffeded;
+  --yellow: #f0ca81;
+  --green: #45dec3;
+
+  /* Margins */
+  --margin-16: 1rem;
+  --margin-50: 3.125rem;
+  --margin-100: 6.25rem;
+  --margin-150: 9.375rem;
+
+  /* fonts */
+  --source-sans-pro: 'IBM Plex Serif', serif;
+  --font-size-xlarge: 4.375rem;
+  --font-size-regular: 1.5rem;
+  --font-size-small: 1.125rem;
+};

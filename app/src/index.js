@@ -6,7 +6,7 @@ import {
   Route
 } from "react-router-dom";
 
-import CaseStudyTwitter from 'src/pages/CaseStudyTwitter';
+import CaseStudyTwitter from 'components/pages/CaseStudyTwitter';
 import './index.css';
 
 // import React from "react";
@@ -26,7 +26,7 @@ import './index.css';
 // ReactDOM.render(<App />, document.querySelector("#root"));
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <Switch>
         <Route path="/">
           <CaseStudyTwitter />
@@ -45,7 +45,7 @@ function App() {
       */}
 
       </Switch>
-    </div>
+    </React.Fragment>
   );
 }
 
