@@ -1,7 +1,37 @@
-.CaseStudyTwitter {
-  color: purple;
+.container {
+  color: var(--text-dark);
+}
+
+.splashLeftContent {
+  padding-right: 120px;
 }
 
 .header {
-  width: 15rem;
+  color: var(--red);
+  font-size: var(--font-size-xlarge);
+  text-transform: uppercase;
+}
+
+.subHeader {
+  margin: 1rem 0;
+  font-size: var(--font-size-regular);
+  font-weight: var(--font-weight-regular);
+}
+
+.splashImage {
+}
+
+.outro {
+  position: relative;
+}
+
+.outroNavContainer {
+  position: sticky;
+  top: 2rem;
+  margin-left: calc(-1 * var(--margin-150));
+  width: 9.375rem;
+}
+
+.outroNavAbsoluteContainer {
+  position: absolute;
 }

@@ -11,14 +11,19 @@ const TabTitleSection = (props) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.title}>{title}</div>
+      {
+        title ?
+          <div className={`${styles.title} ibm-plex-serif`}>{title}</div>
+        :
+          <div className={styles.emptyTitle}/>
+      }
       <div className={styles.content}>{children}</div>
     </div>
   );
 };
 
 TabTitleSection.propTypes = {
-  title: string.isRequired,
+  title: string,
   children: node.isRequired,
 };
 

@@ -3,7 +3,17 @@
 }
 
 .title {
-  width: 12.75rem;
+  min-width: 12.75rem;
+  max-width: 12.75rem;
+  font-size: var(--font-size-regular);
+  text-transform: uppercase;
+  margin-right: 3.125rem;
+}
+
+.emptyTitle {
+  min-width: 12.75rem;
+  max-width: 12.75rem;
+  margin-right: 3.125rem;
 }
 
 .title::after {
@@ -12,9 +22,5 @@
   background: var(--red);
   height: .3125rem;
   width: 6.25rem;
-
-}
-
-.content {
-
+  margin-top: .3125rem;
 }

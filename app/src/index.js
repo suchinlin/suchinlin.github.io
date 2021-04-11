@@ -7,45 +7,18 @@ import {
 } from "react-router-dom";
 
 import CaseStudyTwitter from 'components/pages/CaseStudyTwitter';
+import styles from './index.css';
 import './index.css';
 
-// import React from "react";
-// import ReactDOM from "react-dom";
-
-// import MyImage from './assets/su.png';
-
-// const App = () => {
-//   return (
-//     <div>
-//       <div>Welcome to my-webpack-react-starter</div>
-//       <img src={MyImage} />
-//     </div>
-//   );
-// };
-
-// ReactDOM.render(<App />, document.querySelector("#root"));
 function App() {
   return (
-    <React.Fragment>
+    <div className={styles.app}>
       <Switch>
         <Route path="/">
           <CaseStudyTwitter />
         </Route>
-
-        {/*
-        <Route path="/contact/:id">
-          <Contact />
-        </Route>
-        <Route path="/contact">
-          <AllContacts />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      */}
-
       </Switch>
-    </React.Fragment>
+    </div>
   );
 }
 

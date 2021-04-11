@@ -1,0 +1,81 @@
+.container {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.stepContainer {
+  position: relative;
+  cursor: pointer;
+}
+
+.stepLabel {
+  position: absolute;
+  right: -14.75rem;
+  width: 12.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--ibm-plex-serif);
+  font-size: var(--font-size-regular);
+  text-transform: uppercase;
+}
+
+.stepLabel::after {
+  content: '';
+  display: block;
+  background: var(--red);
+  height: .3125rem;
+  margin-top: .3125rem;
+  width: 6.25rem;
+}
+
+.stepContainer + .stepContainer {
+  margin-top: 1.25rem;
+}
+
+.step {
+  width: 4.375rem;
+  height: 4.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+  text-align: center;
+  color: var(--text-dark);
+  border: 1px solid var(--text-dark);
+  background: var(--white);
+  transition: all .2s ease-out;
+}
+
+.currentStep {
+  background: var(--red);
+  color: var(--white);
+  border: 1px solid var(--red);
+  transform: scale(1.2);
+/*  width: 6.25rem;
+  height: 6.25rem;*/
+}
+
+.number {
+  display: block;
+  font-size: 1rem;
+}
+
+.text {
+  font-size: .625rem;
+}
+
+.currentStep .number {
+  font-size: 1.875rem;
+  font-weight: var(--font-weight-semibold);
+}

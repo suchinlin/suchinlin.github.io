@@ -1,18 +1,3 @@
-html {
-  font-size: 100%;
-}
-
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1rem; /* 16px */
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 150px;
-}
-
-/*:global(.sampleClass) {
-}*/
-
 :root {
   /* Colors */
   --red: #f46b8b;
@@ -22,6 +7,7 @@ body {
   --baby-pink: #ffeded;
   --yellow: #f0ca81;
   --green: #45dec3;
+  --white: #ffffff;
 
   /* Margins */
   --margin-16: 1rem;
@@ -30,8 +16,47 @@ body {
   --margin-150: 9.375rem;
 
   /* fonts */
-  --source-sans-pro: 'IBM Plex Serif', serif;
-  --font-size-xlarge: 4.375rem;
+  --ibm-plex-serif: 'IBM Plex Serif', serif;
+  --font-size-xlarge: 3.75rem;
   --font-size-regular: 1.5rem;
   --font-size-small: 1.125rem;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
 };
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 1rem; /* 16px */
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+:global(.ibm-plex-serif) {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+:global(.semi-bold) {
+  font-weight: 600;
+}
+
+:global(.flex-centered) {
+  display: flex;
+  align-items: center;
+}
+
+:global(.p-text) {
+  font-size: var(--font-size-small);
+}
+
+:global(.section-container) {
+  margin-top: var(--margin-150);
+}
+
+.app {
+  padding: 0 150px;
+}
