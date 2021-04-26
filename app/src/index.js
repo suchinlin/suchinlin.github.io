@@ -9,6 +9,7 @@ import {
 import CaseStudyTwitter from 'components/pages/CaseStudyTwitter';
 import styles from './index.css';
 import './index.css';
+import './global.gcss';
 
 function App() {
   return (

@@ -1,5 +1,5 @@
-:root {
-  /* Colors */
+.app {
+    /* colors */
   --red: #f46b8b;
   --text-dark: #303030;
   --text-light: #454545;
@@ -8,8 +8,9 @@
   --yellow: #f0ca81;
   --green: #45dec3;
   --white: #ffffff;
+  --light-grey: #f9f9f9;
 
-  /* Margins */
+  /* margins */
   --margin-16: 1rem;
   --margin-50: 3.125rem;
   --margin-100: 6.25rem;
@@ -17,46 +18,18 @@
 
   /* fonts */
   --ibm-plex-serif: 'IBM Plex Serif', serif;
-  --font-size-xlarge: 3.75rem;
-  --font-size-regular: 1.5rem;
-  --font-size-small: 1.125rem;
+  --font-size-xlarge: 3.75rem; /* 60px */
+  --font-size-regular: 1.5rem; /* 24px */
+  --font-size-small: 1.125rem; /* 18px */
+  --font-size-xsmall: .875rem; /* 14px */
+  --font-size-xxsmall: .625rem; /* 10px */
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
-};
+  --font-weight-bold: 700;
 
-html {
-  font-size: 100%;
-}
+  /* shadows */
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);;
 
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: var(--font-weight-regular);
-  font-size: 1rem; /* 16px */
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-:global(.ibm-plex-serif) {
-  font-family: 'IBM Plex Serif', serif;
-}
-
-:global(.semi-bold) {
-  font-weight: 600;
-}
-
-:global(.flex-centered) {
-  display: flex;
-  align-items: center;
-}
-
-:global(.p-text) {
-  font-size: var(--font-size-small);
-}
-
-:global(.section-container) {
-  margin-top: var(--margin-150);
-}
-
-.app {
   padding: 0 150px;
+  font-size: var(--font-size-small);
 }

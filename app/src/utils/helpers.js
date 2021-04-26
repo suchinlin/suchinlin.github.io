@@ -16,5 +16,8 @@ export const getElmHeight = (node) => {
 };
 
 export const sumList = (list) => {
+  if (list.length === 0) {
+    return 0;
+  }
   return list.reduce((a, b) => a + b, 0);
 };

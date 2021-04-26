@@ -24,10 +24,10 @@ const OutroNav = (props) => {
           return (
             <li className={styles.stepContainer} key={step} onClick={handleClick.bind(this, step)}>
               <div className={stepClass}>
-                <div className={styles.number}>{index + 1}</div>
-                { !isSelected ? <div className={styles.text}>{step}</div> : null }
+                { isSelected ? <div className={styles.number}>{index + 1}</div> : null }
               </div>
-              { isSelected ? <div className={styles.stepLabel}>{step}</div> : null }
+              { !isSelected ? <div className={styles.stepLabel}>{step}</div> : null }
+              { isSelected ? <div className={styles.stepLabelSelected}>{step}</div> : null }
             </li>
           )
         })

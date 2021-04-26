@@ -18,9 +18,10 @@
   cursor: pointer;
 }
 
-.stepLabel {
+.stepLabel,
+.stepLabelSelected {
   position: absolute;
-  right: -14.75rem;
+  right: -15.75rem;
   width: 12.75rem;
   top: 50%;
   transform: translateY(-50%);
@@ -29,7 +30,13 @@
   text-transform: uppercase;
 }
 
-.stepLabel::after {
+.stepLabel {
+  right: -17.1875rem;
+  margin-top: 1.0625rem;
+  font-size: var(--font-size-xxsmall);
+}
+
+.stepLabelSelected::after {
   content: '';
   display: block;
   background: var(--red);
@@ -38,13 +45,27 @@
   width: 6.25rem;
 }
 
-.stepContainer + .stepContainer {
-  margin-top: 1.25rem;
+.stepLabelSelected {
+  margin-top: 10px;
+}
+
+.stepContainer::before {
+  content: '';
+  display: block;
+  background: var(--red);
+  height: 1.25rem;
+  width: 1px;
+  margin: .625rem auto;
+}
+
+.stepContainer:first-child::before {
+  visibility: hidden;
+  /*margin-top: -1.25rem;*/
 }
 
 .step {
-  width: 4.375rem;
-  height: 4.375rem;
+  width: 18px;
+  height: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,18 +73,19 @@
   border-radius: 50%;
   text-align: center;
   color: var(--text-dark);
-  border: 1px solid var(--text-dark);
+  border: 1px solid var(--red);
   background: var(--white);
-  transition: all .2s ease-out;
+  color: var(--white);
 }
 
 .currentStep {
+  width: 48px;
+  height: 48px;
   background: var(--red);
   color: var(--white);
-  border: 1px solid var(--red);
   transform: scale(1.2);
-/*  width: 6.25rem;
-  height: 6.25rem;*/
+  margin-bottom: .625rem;
+  transition: background, transform .2s ease-in;
 }
 
 .number {

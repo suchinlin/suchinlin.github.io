@@ -23,11 +23,9 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
       },
       {
         test: /\.css$/i,
-        // loader: ["style-loader", "css-loader"],
         use: [
           "style-loader",
           {
@@ -35,27 +33,27 @@ module.exports = {
             options: {
               modules: true,
             },
-            // options: {
-            //   modules: {
-            //     compileType: "module",
-            //     mode: "local",
-            //     auto: true,
-            //     exportGlobals: true,
-            //     localIdentName: "[path][name]__[local]--[hash:base64:5]",
-            //     localIdentContext: path.resolve(__dirname, "src"),
-            //     localIdentHashPrefix: "my-custom-hash",
-            //     namedExport: true,
-            //     exportLocalsConvention: "camelCase",
-            //     exportOnlyLocals: false,
-            //   },
-            // },
           }
+        ]
+      },
+      // global css, don't load as css-module
+      {
+        test: /\.gcss$/i,
+        use: [
+          "style-loader",
+          "css-loader",
         ]
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
         use: {
           loader: 'url-loader?limit=10000&name=img/[name].[ext]'
+        }
+      },
+      {
+        test: /\.(mp4|mov)$/,
+        use: {
+          loader: 'file-loader?name=videos/[name].[ext]'
         }
       }
     ]
