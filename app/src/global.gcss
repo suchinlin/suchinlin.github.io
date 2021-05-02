@@ -4,14 +4,19 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: var(--font-weight-regular);
+  font-weight: 300;
   font-size: 1rem; /* 16px */
   max-width: 1440px;
   margin: 0 auto;
 }
 
-ul {
+img {
+  width: 100%;
+}
+
+ul, ol {
   margin: 0;
+  padding: 0;
 }
 
 li {
@@ -30,12 +35,20 @@ li {
   text-align: left;
 }
 
-.semi-bold {
-  font-weight: var(--font-weight-semibold);
+.text-right {
+  text-align: right;
 }
 
-.bold {
-  font-weight: var(--font-weight-bold);
+.font-400 {
+  font-weight: var(--font-weight-400);
+}
+
+.font-300 {
+  font-weight: var(--font-weight-300);
+}
+
+.font-700 {
+  font-weight: var(--font-weight-800);
 }
 
 .flex-centered,
@@ -61,6 +74,7 @@ li {
   line-height: 2.5rem;
   text-align: left;
   margin: 0;
+  font-weight: var(--font-weight-300);
 }
 
 .margin-top-16 {
@@ -83,12 +97,16 @@ li {
   font-size: var(--font-size-xsmall);
 }
 
-.uppercase {
-  text-transform: uppercase;
+.font-size-10 {
+  font-size: var(--font-size-xxsmall);
 }
 
-.section-container {
-  margin-top: var(--margin-150);
+.offset-right-150-margin {
+  margin: 0 -150px;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .yellow-border-container {

@@ -1,74 +1,89 @@
 import React from "react";
 import { node, func, object, arrayOf } from 'prop-types';
 
-// import { getElmHeight, sumList } from "utils/helpers";
+import { getElmHeight, sumList } from "utils/helpers";
 
+const outroNavFromTop = 150;
 
 class OutroScrollDetector extends React.Component {
   constructor(props) {
     super(props);
-    this.handleScrollOffsetTop = this.handleScrollOffsetTop.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
     this.outro = React.createRef();
+    this.state = {
+      index: null,
+      progress: props.refs.map(Number.prototype.valueOf, 0) // initiate with 0
+    };
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScrollOffsetTop);
+    window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScrollOffsetTop);
-  }
-
-  handleScrollOffsetTop() {
-    const { refs, onOutroChange } = this.props;
-
-    refs.map((ref, index) => {
-      if (ref && ref.current) {
-        const elementFromTop = ref.current.getBoundingClientRect().top;
-        // the navigation is about 60px apart in height
-        const offsetFromNavCircle = (index + 1) * 20;
-        // must not be negative which means its passed the top
-        if (elementFromTop < (150 + offsetFromNavCircle)) {
-          onOutroChange({index: index});
-        }
-        console.log('index', index, ref.current.getBoundingClientRect().top);
-      }
-    });
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll() {
-    // const { refs, onOutroChange } = this.props;
+    this.getCurrentIndex();
+    this.getSectionScrolledPercentage();
+  }
 
-    // const totalOutroScrollable = this.outro.current.scrollHeight + 150; // for the 150 top margin
+  getCurrentIndex() {
+    const { refs, onOutroIndexChange } = this.props;
+    // reverse so we can always get the last index that is < outroNavFromTop
+    const currentIndex = [...Array(refs.length).keys()].reverse().find(index => {
+      const ref = refs[index];
+      if (ref && ref.current) {
+        const elementFromTop = ref.current.getBoundingClientRect().top;
+        return elementFromTop < outroNavFromTop;
+      }
+    });
+    onOutroIndexChange(currentIndex);
+  }
 
-    // const firstOutroElem = refs[0];
+  getSectionScrolledPercentage() {
+    const { refs, onOutroIndexPercentScrolledChange } = this.props;
+
+    const totalOutroScrollable = this.outro.current.scrollHeight + outroNavFromTop; // for the 150 top margin
+
+    const firstOutroElem = refs[0];
+    // outroStart when its scrolled into view
     // const outroStart = window.pageYOffset + firstOutroElem.current.getBoundingClientRect().top;
     // const outroScrolled = window.pageYOffset + window.innerHeight - outroStart;
 
-    // const elementHeightPercentList = refs.map(ref => {
-    //   if (ref && ref.current) {
-    //     const elemHeight = getElmHeight(ref.current);
-    //     return elemHeight / totalOutroScrollable * 100;
-    //   }
-    // });
+    // outroStart when its near the top
+    const outroStart = window.pageYOffset + firstOutroElem.current.getBoundingClientRect().top - outroNavFromTop;
+    const outroScrolled = window.pageYOffset - outroStart;
 
-    // // get the percentage of the outro scrolled based on total outroll scrollable
-    // const scrolledPercent = outroScrolled / totalOutroScrollable * 100
+    const elementHeightPercentList = refs.map(ref => {
+      if (ref && ref.current) {
+        const elemHeight = getElmHeight(ref.current);
+        return elemHeight / totalOutroScrollable * 100;
+      }
+    });
+    // get the percentage of the outro scrolled based on total outroll scrollable
+    const scrolledPercent = outroScrolled / totalOutroScrollable * 100
 
-    // // add some padding before considering the section has been scrolled to.
-    // // start the padding when scrolled 20% into the content
-    // const minPadding = .80;
+    const indexProgressPercentage = [...Array(refs.length).keys()].map(index => {
+      // get scrolledPercent and divide it by the threshold where it ends
+      const percentStartpoint = sumList(elementHeightPercentList.slice(0, index));
+      const percentBreakpoint = sumList(elementHeightPercentList.slice(0, index + 1));
 
-    // elementHeightPercentList.map((percent, index) => {
-    //   const minPercentage = percent - (percent * minPadding);
-    //   // where the start point of the element is
-    //   const percentStartPoint = sumList(elementHeightPercentList.slice(0, index)) + minPercentage;
-    //   // breakpoint where it stops
-    //   const percentBreakpoint = scrolledPercent + sumList(elementHeightPercentList.slice(index + 1)) > 100;
-    //   if (scrolledPercent > percentStartPoint && !percentBreakpoint) {
-    //     onOutroChange({ index });
-    //   }
-    // });
+      // only calculate the amount from the start to the end
+      const sectionTotalPercent = percentBreakpoint - percentStartpoint;
+      const sectionScrolledPercent = scrolledPercent - percentStartpoint;
+
+      const percent = Math.round(sectionScrolledPercent / sectionTotalPercent * 100);
+      if (percent < 100) {
+        return percent > 0 ? percent : 0;
+      }
+      return 100;
+    });
+
+    if (onOutroIndexPercentScrolledChange) {
+      onOutroIndexPercentScrolledChange(indexProgressPercentage);
+    }
   }
 
   render() {
@@ -82,7 +97,8 @@ class OutroScrollDetector extends React.Component {
 }
 
 OutroScrollDetector.propTypes = {
-  onOutroChange: func.isRequired,
+  onOutroIndexChange: func.isRequired,
+  onOutroIndexPercentScrolledChange: func,
   refs: arrayOf(object).isRequired,
   children: node.isRequired,
 };

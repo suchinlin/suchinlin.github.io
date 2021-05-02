@@ -9,6 +9,12 @@
   --green: #45dec3;
   --white: #ffffff;
   --light-grey: #f9f9f9;
+  --mada-color: #EBDCC9;
+  --protweet-color: #D6EBFF;
+  --baymade-color: #CFF1E1;
+
+  /* borders */
+  --border-color: #eeeeee;
 
   /* margins */
   --margin-16: 1rem;
@@ -23,13 +29,25 @@
   --font-size-small: 1.125rem; /* 18px */
   --font-size-xsmall: .875rem; /* 14px */
   --font-size-xxsmall: .625rem; /* 10px */
-  --font-weight-regular: 400;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-800: 700;
 
   /* shadows */
-  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);;
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 
   padding: 0 150px;
   font-size: var(--font-size-small);
+}
+
+@media (max-width: 1024px) {
+  .app {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 0 10px;
+  }
 }

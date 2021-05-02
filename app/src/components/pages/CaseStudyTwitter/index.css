@@ -3,43 +3,67 @@
   margin: 13rem 0 26rem;
 }
 
+.intro {
+  width: 90%;
+  border: 1px solid var(--border-color);
+  margin: var(--margin-150) auto 0;
+  border-radius: .625rem;
+}
+
+.introInner {
+  padding: 3.125rem 4.875rem;
+}
+
+.introMethods {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.introMethodItems {
+  flex-basis: 50%;
+  margin: .75rem 0 0;
+  font-weight: var(--font-weight-300);
+}
+
 .splashLeftContent {
   padding-right: 120px;
+}
+
+.discoverHeadlineContainer {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .header {
   color: var(--red);
   font-size: var(--font-size-xlarge);
   text-transform: uppercase;
-  font-weight: var(--font-weight-semibold);
   letter-spacing: .1em;
 }
 
 .subHeader {
   margin: 1rem 0;
   font-size: var(--font-size-regular);
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-400);
 }
 
 .splashImage {
 }
 
 .questionDivider {
-  text-align: right;
+  text-align: center;
   margin-top: var(--margin-150);
-  display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
 .questionSvg {
   width: 2.25rem;
-  margin-right: 1rem;
 }
 
 .questionDividerText {
-  max-width: 525px;
   position: relative;
+  letter-spacing: 0.1em;
   font-family: var(--ibm-plex-serif);
 }
 
@@ -48,10 +72,8 @@
   display: block;
   background: var(--red);
   height: .3125rem;
-  margin-top: .3125rem;
+  margin: 1rem auto 0;
   width: 6.25rem;
-  position: absolute;
-  right: 0;
   bottom: -1.25rem;
 }
 
@@ -60,17 +82,25 @@
 }
 
 .outroNavContainer {
-  position: sticky;
-  top: 2rem;
-  margin-left: calc(-1 * var(--margin-150));
-  width: 9.375rem;
+  position: static;
+  border: 1px transparent;
+  background: var(--white);
+  box-shadow: none;
+  right: 25%;
 }
 
-.outroNavAbsoluteContainer {
-  position: absolute;
+.outroNavStickied {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow);
+  transition: all .5s ease-in;
 }
 
 .headlineItem {
+  position: relative;
   text-decoration: none;
   color: var(--text-dark);
   font-size: var(--font-size-xsmall);
@@ -89,6 +119,19 @@
   margin-left: .625rem;
 }
 
+.headlineLogo {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 50px;
+  opacity: .5;
+}
+
+.bbcImageContainer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .videoDemoContainer {
   margin-top: var(--margin-16);
   position: relative;
@@ -100,24 +143,21 @@
 .videoContainer {
   position: absolute;
   top: 98px;
-  left: 33%;
+  left: 36.7%;
   z-index: -1;
 }
 
-.personaImageContainer {
+.tweetDiagram {
   width: 100%;
-  margin: 0 auto;
-  text-align: center;
 }
 
-.personaImageContainer img {
-  width: 100%;
-  max-width: 700px;
+.tweetDiagramText {
+  padding-left: 3rem;
 }
 
-.resultFeedText {
-  position: absolute;
-  top: -300px;
+.tweetDiagramListItem {
+  list-style: decimal;
+  margin-top: var(--margin-16);
 }
 
 .heartSvg {
@@ -126,11 +166,23 @@
 }
 
 .thankNote {
-  justify-content: flex-end;
-  margin-top: var(--margin-150);
+  text-align: center;
+  margin-top: calc(var(--margin-150) * 2);
   font-size: var(--font-size-regular);
   font-family: var(--ibm-plex-serif);
-  font-weight: var(--font-weight-bold);
-  display: flex;
-  align-items: center;
+  font-weight: var(--font-weight-800);
+}
+
+@media (max-width: 1440px) {
+  .introInner {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { node, number } from 'prop-types';
+import { bool, node, number } from 'prop-types';
 import classnames from 'classnames';
 
 import styles from './index.css';
@@ -9,16 +9,12 @@ const GridItems = (props) => {
     children,
     columns,
     gap,
+    alignTop,
   } = props;
-
-  const itemClass = classnames({
-    [styles.columnFull]: columns === 0,
-    [styles.columnHalf]: columns === 2,
-    [styles.columnThirds]: columns === 3,
-  });
 
   const containerClass = classnames({
     [styles.container]: true,
+    [styles.alignTop]: alignTop,
     [styles.wrap]: columns > 0,
     [styles.gap1]: gap === 1,
     [styles.gap2]: gap === 2,
@@ -26,9 +22,15 @@ const GridItems = (props) => {
     [styles.gap4]: gap === 4,
   })
 
+  const itemClass = classnames({
+    [styles.columnFull]: columns === 0,
+    [styles.columnHalf]: columns === 2,
+    [styles.columnThirds]: columns === 3,
+  });
+
   return (
     <div className={containerClass}>
-      {React.Children.map(children, (child, index) => <li key={`grid-${index}`} className={itemClass}>{child}</li>)}
+      {React.Children.map(children, (child, index) => <div key={`grid-${index}`} className={itemClass}>{child}</div>)}
     </div>
   );
 };
@@ -36,11 +38,13 @@ const GridItems = (props) => {
 GridItems.propTypes = {
   children: node.isRequired,
   columns: number, // default takes full width and auto grid
+  alignTop: bool, // uses align-items: flex-start
   gap: number,
 };
 
 GridItems.defaultProps = {
   columns: 0,
+  alignTop: false,
   gap: 1,
 };
 

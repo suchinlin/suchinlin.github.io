@@ -2,6 +2,13 @@ import React from 'react';
 import { oneOf, string } from 'prop-types';
 import classnames from 'classnames';
 
+// small icons
+import glass from 'assets/svgs/glass.svg';
+import check from 'assets/svgs/check.svg';
+import lightbulb from 'assets/svgs/lightbulb.svg';
+import pen from 'assets/svgs/pen.svg';
+import target from 'assets/svgs/target.svg';
+
 import process from 'assets/svgs/process.svg';
 import question from 'assets/svgs/question.svg';
 import heart from 'assets/svgs/heart.svg';
@@ -15,6 +22,11 @@ const imageMapper = {
   process,
   question,
   heart,
+  glass,
+  check,
+  lightbulb,
+  pen,
+  target,
 }
 
 const Svg = (props) => {
@@ -48,11 +60,7 @@ const Svg = (props) => {
 Svg.propTypes = {
   viewBox: string,
   className: string,
-  image: oneOf([
-    'process',
-    'question',
-    'heart',
-  ]),
+  image: oneOf(Object.keys(imageMapper)),
   icon: oneOf([
     'qrCodeOutline',
   ]),
