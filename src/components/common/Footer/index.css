@@ -14,6 +14,15 @@
 .contentContainer {
 }
 
+.footerHomeLink {
+  text-decoration: none;
+}
+
+.footerHomeLink:hover {
+  color: var(--red);
+  text-decoration: none;
+}
+
 .subContent {
   margin-top: var(--margin-16);
   display: flex;

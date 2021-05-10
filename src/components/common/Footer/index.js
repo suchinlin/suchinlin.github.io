@@ -1,4 +1,6 @@
 import React, { useState }  from 'react';
+import { Link } from "react-router-dom";
+
 import Svg from "components/common/Svg";
 
 import styles from './index.css';
@@ -9,7 +11,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={`${styles.contentContainer} with-content-padding`}>
         <div className={styles.header}>
-          suchinlin
+          <Link to="/" className={styles.footerHomeLink}>suchinlin</Link>
         </div>
         <div className={styles.subContent}>
           <div className={styles.leftContent}>

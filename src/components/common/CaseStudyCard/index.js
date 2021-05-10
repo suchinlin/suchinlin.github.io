@@ -22,14 +22,14 @@ class CaseStudyCard extends React.Component {
           <div className={styles.name}>M.A.D.A</div>
           <div className={styles.cardLabelContainer}>
             <GridItems alignTop columns={1}>
-              <div className={styles.labelTitle}>Client Research Project</div>
+              <div className={styles.labelTitle}>Client research project</div>
               <div>
-                <div className={styles.labelTitle}>Key Highlights</div>
+                <div className={styles.labelTitle}>Key highlights</div>
                 <div className={styles.labelItems}>
                   <GridItems columns={2} gap={0}>
                     <div>Desktop-first</div>
-                    <div>User Research</div>
-                    <div>Usability Testing</div>
+                    <div>User research</div>
+                    <div>Usability testing</div>
                     <div>Low-fidelity prototype</div>
                   </GridItems>
                 </div>
@@ -51,14 +51,14 @@ class CaseStudyCard extends React.Component {
           <div className={styles.name}>Baymade-Beta</div>
           <div className={styles.cardLabelContainer}>
             <GridItems alignTop columns={1}>
-              <div className={styles.labelTitle}>Concept Project</div>
+              <div className={styles.labelTitle}>Concept project</div>
               <div>
-                <div className={styles.labelTitle}>Key Highlights</div>
+                <div className={styles.labelTitle}>Key highlights</div>
                 <div className={styles.labelItems}>
                   <GridItems columns={2} gap={0}>
                     <div>Desktop-first</div>
-                    <div>Information Architecture</div>
-                    <div>E-commerce Design</div>
+                    <div>Information architecture</div>
+                    <div>E-commerce design</div>
                     <div>Low-fidelity prototype</div>
                   </GridItems>
                 </div>
@@ -80,14 +80,14 @@ class CaseStudyCard extends React.Component {
           <div className={styles.name}>Pro-Tweets</div>
           <div className={styles.cardLabelContainer}>
             <GridItems alignTop columns={1}>
-              <div className={styles.labelTitle}>Concept Project</div>
+              <div className={styles.labelTitle}>Concept project</div>
               <div>
-                <div className={styles.labelTitle}>Key Highlights</div>
+                <div className={styles.labelTitle}>Key highlights</div>
                 <div className={styles.labelItems}>
                   <GridItems columns={2} gap={0}>
                     <div>Mobile-first</div>
                     <div>Feature design</div>
-                    <div>UI/Interaction Design</div>
+                    <div>UI/Interaction design</div>
                     <div>High-fidelity prototype</div>
                   </GridItems>
                 </div>
