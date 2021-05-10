@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { createBrowserHistory } from 'history';
+// import { createBrowserHistory } from 'history';
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route
 } from "react-router-dom";
@@ -24,42 +25,40 @@ import './global.gcss';
 function App() {
   return (
     <div className={styles.app}>
-      <Router history={createBrowserHistory()}>
-        <Switch>
-          <Route exact path="/">
-            <Header />
-            <Home />
-            <Footer />
-          </Route>
-          <Route exact path="/about">
-            <Header />
-            <About />
-            <Footer />
-          </Route>
-          <Route path="/case-study/protweet">
-            <Header />
-            <CaseStudyTwitter />
-            <Footer />
-          </Route>
-          <Route path="/case-study/mada">
-            <Header />
-            <CaseStudyMada />
-            <Footer />
-          </Route>
-          <Route path="/case-study/baymade">
-            <Header />
-            <CaseStudyBaymade />
-            <Footer />
-          </Route>
-        </Switch>
-      </Router>
+      <Switch>
+        <Route exact path="/">
+          <Header />
+          <Home />
+          <Footer />
+        </Route>
+        <Route exact path="/about">
+          <Header />
+          <About />
+          <Footer />
+        </Route>
+        <Route path="/case-study/protweet">
+          <Header />
+          <CaseStudyTwitter />
+          <Footer />
+        </Route>
+        <Route path="/case-study/mada">
+          <Header />
+          <CaseStudyMada />
+          <Footer />
+        </Route>
+        <Route path="/case-study/baymade">
+          <Header />
+          <CaseStudyBaymade />
+          <Footer />
+        </Route>
+      </Switch>
     </div>
   );
 }
 
 ReactDOM.render(
-  <Router>
+  <HashRouter>
     <App />
-  </Router>,
+  </HashRouter>,
   document.getElementById("root")
 );
