@@ -1,0 +1,112 @@
+.container {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.stepContainer {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.progressBarContainer {
+  border: 2px solid var(--red);
+  border-radius: 4px;
+  width: 40px;
+  height: 2px;
+  margin: 0 .5rem;
+}
+
+.blinkBar {
+  transform: scale(1.1);
+  transition: transform .1s ease-out;
+}
+
+.progressBar {
+  background: var(--red);
+  height: 2px;
+  display: block;
+}
+
+.svgContainer {
+  padding: .5rem 1rem calc(.5rem + 13px); /* 13px for the text height */
+  position: relative;
+}
+
+.stepContainer.currentStep {
+  background: linear-gradient(
+    180deg,
+    rgb(255, 237, 237, .8) 0%,
+    rgb(255, 249, 249, .8) 0.01%,
+    rgb(255, 237, 237, .8) 11.98%,
+    rgb(255, 196, 196, .8) 100%);
+}
+
+.stepContainer.currentStep:first-child {
+  border-bottom-left-radius: .625rem;
+}
+
+.stepContainer.currentStep:last-child {
+  border-bottom-right-radius: .625rem;
+}
+
+.svgImage {
+  width: 30px;
+  height: 30px;
+}
+
+.stepLabel {
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 7px;
+  font-size: var(--font-size-xxxsmall);
+  font-weight: var(--font-weight-400);
+  /* center the text */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+@media (max-width: 1440px) {
+  .svgContainer {
+    padding: .5rem 1rem calc(.5rem + 7px); /* 7px for the text height */
+  }
+
+  .stepLabel {
+    bottom: 4px;
+  }
+
+  .svgImage {
+    width: 25px;
+    height: 25px;
+  }
+
+  .progressBarContainer {
+    border: 1px solid var(--red);
+    width: 25px;
+    margin: 0 .5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 500px) {
+  .svgImage {
+    width: 20px;
+    height: 20px;
+  }
+
+  .progressBarContainer {
+    width: 10px;
+  }
+}

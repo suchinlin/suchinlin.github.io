@@ -1,0 +1,342 @@
+.container {
+  color: var(--text-dark);
+  margin: 13rem 0 var(--margin-150);
+}
+
+.intro {
+  width: 90%;
+  border: 1px solid var(--border-color);
+  margin: var(--margin-150) auto 0;
+  border-radius: .625rem;
+}
+
+.introProcessContainer {
+  margin-top: var(--margin-50);
+  display: flex;
+  align-items: flex-start;
+}
+
+.introProcessLeft {
+  width: 50%;
+}
+
+.introProcessRight {
+  width: 50%;
+}
+
+.introInner {
+  padding: 3.125rem 4.875rem;
+}
+
+.introMethods {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.introMethodItems {
+  flex-basis: 50%;
+  margin: .75rem 0 0;
+  font-weight: var(--font-weight-300);
+}
+
+.splashContainer {
+  display: flex;
+  align-items: center;
+}
+
+.splashLeftContent {
+  padding-right: 120px;
+}
+
+.splashLeftContent,
+.splashRightContent {
+  width: 50%;
+}
+
+.discoverHeadlineContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  color: var(--red);
+  font-size: var(--font-size-xlarge);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.subHeader {
+  margin: 1rem 0;
+  font-size: var(--font-size-regular);
+  font-weight: var(--font-weight-400);
+}
+
+.splashImage {
+}
+
+.questionDivider {
+  text-align: center;
+  margin-top: var(--margin-150);
+  justify-content: center;
+  align-items: center;
+}
+
+.questionSvg {
+  width: 2.25rem;
+}
+
+.questionDividerText {
+  position: relative;
+  letter-spacing: 0.1em;
+  font-family: var(--ibm-plex-serif);
+}
+
+.questionDividerText::after {
+  content: '';
+  display: block;
+  background: var(--red);
+  height: .3125rem;
+  margin: 1rem auto 0;
+  width: 6.25rem;
+  bottom: -1.25rem;
+}
+
+.outro {
+  position: relative;
+}
+
+.outroNavContainer {
+  position: static;
+  border: 1px solid transparent;
+  border-bottom-left-radius: .625rem;
+  border-bottom-right-radius: .625rem;
+  background: var(--white);
+  /*box-shadow: none;*/
+  right: 25%;
+}
+
+.outroNavStickied {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 1rem;
+  border: 1px solid var(--border-color);
+  transition: all .5s ease-in;
+}
+
+.headlineTitle {
+  font-weight: var(--font-weight-700);
+  text-align: center;
+}
+
+.headlineItem {
+  position: relative;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: var(--font-size-xsmall);
+  border: 1px solid var(--yellow);
+  border-radius: .625rem;
+  margin-top: .625rem;
+  height: 6.25rem;
+  padding: .625rem;
+}
+
+.headlineItem:hover {
+  box-shadow: var(--box-shadow);
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.headlineItemText {
+  margin-left: .625rem;
+}
+
+.headlineLogo {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 50px;
+  opacity: .5;
+}
+
+.missionImageContainer {
+  max-width: 790px;
+  margin: 0 auto;
+}
+
+.brandImageContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.featuresImageContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.frictionImageContainer {
+  max-width: 769px;
+  margin: 0 auto;
+}
+
+.proposedImageContainer {
+  max-width: 889px;
+  margin: 0 auto;
+}
+
+.inspirationImageContainer {
+  max-width: 890px;
+  margin: 0 auto;
+}
+
+.currentFlowImage {
+  max-width: 777px;
+  margin: 0 auto;
+}
+
+.bbcImageContainer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.coronaBubbleContainer {
+  max-width: 348px;
+  margin: 0 auto;
+}
+
+.proTweetIconContainer {
+  max-width: 125px;
+  margin: 0 auto;
+}
+
+.proTweetIconIntegrationContainer {
+  max-width: 342px;
+  margin: 0 auto;
+}
+
+.videoDemoContainer {
+  width: 533px;
+  margin: var(--margin-16) auto 0;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.videoContainer {
+  position: absolute;
+  top: 98px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.tweetDiagram {
+  width: 100%;
+}
+
+.tweetDiagramText {
+  padding-left: 3rem;
+}
+
+.tweetDiagramListItem {
+  list-style: decimal;
+  margin-top: var(--margin-16);
+}
+
+.heartSvg {
+  width: 30px;
+  margin-left: 2rem;
+}
+
+.thankNote {
+  text-align: center;
+  margin-top: calc(var(--margin-150) * 2);
+  font-size: var(--font-size-regular);
+  font-family: var(--ibm-plex-serif);
+  font-weight: var(--font-weight-700);
+}
+
+@media (max-width: 1440px) {
+  .introInner {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+  .intro {
+    width: 100%;
+  }
+
+  .introInner {
+    padding: 1rem;
+  }
+
+  .discoverHeadlineContainer {
+    width: 100%;
+  }
+
+  .headlineTitle {
+    font-size: var(--font-size-xsmall);
+  }
+
+  .headlineItemBody {
+    font-size: var(--font-size-xxsmall);
+  }
+
+  .outroNavStickied {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@media (max-width: 500px) {
+  .splashContainer {
+    flex-wrap: wrap;
+  }
+
+  .splashLeftContent,
+  .splashRightContent {
+    width: 100%;
+    padding: 0;
+  }
+
+  .splashRightContent {
+    margin-top: 1rem;
+  }
+
+  .introInner {
+    padding: .5rem;
+  }
+
+  .introProcessContainer {
+    flex-wrap: wrap;
+  }
+
+  .introProcessLeft,
+  .introProcessRight {
+    width: 100%;
+  }
+
+  .introProcessRight {
+    margin-top: 2rem;
+  }
+
+  .videoDemoContainer {
+    width: 100%;
+  }
+
+  .videoContainer {
+    position: relative;
+    top: 0;
+    margin-top: var(--margin-50);
+  }
+
+  .tweetDiagramText {
+    margin-top: var(--margin-50);
+  }
+}

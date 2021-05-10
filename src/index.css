@@ -1,0 +1,42 @@
+.app {
+    /* colors */
+  --red: #f46b8b;
+  --text-dark: #303030;
+  --text-light: #454545;
+  --pink: #f3d1d9;
+  --baby-pink: #ffeded;
+  --yellow: #f0ca81;
+  --green: #45dec3;
+  --white: #ffffff;
+  --light-grey: #f9f9f9;
+  --link-color: #0075FF;
+
+  /* borders */
+  --border-color: #eeeeee;
+
+  /* margins */
+  --margin-16: 1rem;
+  --margin-50: 3.125rem;
+  --margin-100: 6.25rem;
+  --margin-150: 9.375rem;
+
+  /* fonts */
+  --ibm-plex-serif: 'IBM Plex Serif', serif;
+  --petit-formal-script: 'Petit Formal Script', cursive;
+  --font-size-xlarge: 3.75rem; /* 60px */
+  --font-size-large: 2rem; /* 32px */
+  --font-size-regular: 1.5rem; /* 24px */
+  --font-size-small: 1.125rem; /* 18px */
+  --font-size-xsmall: 1rem; /* 16px */
+  --font-size-xxsmall: .75rem; /* 12px */
+  --font-size-xxxsmall: .625rem; /* 10px */
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+
+  /* shadows */
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  --box-shadow-hovered: 1px 4px 4px rgba(0, 0, 0, 0.25);
+
+  font-size: var(--font-size-small);
+}

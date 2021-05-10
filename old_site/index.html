@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Suchin Lin">
+    <meta name="author" content="Suchin Lin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./static/css/base.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="shortcut icon" type="image/png" href="./static/img/favicon.png" />
+    <title>Suchin Lin</title>
+  </head>
+
+  <body>
+    <nav class="navigation container">
+      <ul class="navigation-list">
+        <li class="navigation-list-item">
+          <a class="navigation-list-item-link" href="/">
+            Work
+          </a>
+        </li>
+        <li class="navigation-list-item">
+          <a class="navigation-list-item-link" target="_blank" href="/static/resume/suchinlin.pdf">
+            Resume
+          </a>
+        </li>
+        <li class="navigation-list-item">
+          <a class="navigation-list-item-link" href="/about">
+            About
+          </a>
+        </li>
+        <li class="navigation-list-item">
+          <a class="navigation-list-item-link" href="/contact">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container content">
+      <div class="home-intro flex-space-between-aligned">
+        <img class="home-intro-image flex-item" src="./static/img/headshot-roundteal.png" />
+        <div class="flex-item home-intro-container">
+          <h2 class="home-intro-callout">
+            <span class="home-intro-text">Hi, I'm Suchin Lin,</span>
+            <span class="home-intro-text green">UX Designer & Researcher<span class="text-color">.</span></span>
+          </h2>
+          <div class="grey text">
+            With my background in healthcare, I identify UX symptoms and administer UX cures.
+          </div>
+          <p class="medium-top-margin intro-sub-header text">
+            I believe the best design solutions are results of deep human connections, are grounded in data, and most effectively created by harmonized, collaborative efforts.
+          </p>
+        </div>
+      </div>
+
+      <!-- MADA Project -->
+      <div class="flex-space-between-aligned xxlarge-top-margin">
+        <div class="flex-item flex-item-50">
+          <img class="case-study-img" src="./static/img/mada-p5.png" />
+        </div>
+        <div class="flex-item flex-item-50">
+          <div class="light-grey uppercase font-weight-bold">UX Design Client Project</div>
+          <h2 class="case-study-title">Materializing Hosts' Motivations</h2>
+          <p>
+            Getting MADA hosts from potential to actual
+          </p>
+          <a href="/case-study/mada" class="btn btn-primary btn-lg btn-clear case-study-button">View Project</a>
+        </div>
+      </div>
+      <!-- END MADA Project -->
+
+      <!-- BAYMADE Project -->
+      <div class="flex-space-between-aligned xxlarge-top-margin hidden-mobile">
+        <div class="flex-item flex-item-50">
+          <div class="light-grey uppercase font-weight-bold">UX Design Concept Project</div>
+          <h2 class="case-study-title">Baymade-Beta</h2>
+          <p class="green text"><i>Under Construction</i></p>
+          <p>
+            Efficient e-commerce desktop navigation experience for local
+            brick and mortar business
+          </p>
+          <a href="/case-study/baymade" class="btn btn-primary btn-lg btn-clear case-study-button">View Project</a>
+        </div>
+        <div class="flex-item flex-item-50">
+          <img class="case-study-img" src="./static/img/baymade-p1.png" />
+        </div>
+      </div>
+
+      <div class="flex-space-between-aligned xxlarge-top-margin hidden-desktop">
+        <div class="flex-item flex-item-50">
+          <img class="case-study-img" src="./static/img/baymade-p1.png" />
+        </div>
+        <div class="flex-item flex-item-50">
+          <div class="light-grey uppercase font-weight-bold">UX Design Concept Project</div>
+          <h2 class="case-study-title">Baymade-Beta</h2>
+          <p>
+            Efficient e-commerce desktop navigation experience for local
+            brick and mortar business
+          </p>
+          <a href="/case-study/baymade" class="btn btn-primary btn-lg btn-clear case-study-button">View Project</a>
+        </div>
+      </div>
+      <!-- END BAYMADE Project -->
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="flex-space-between-aligned">
+          <div class="flex-item-non-fluid flex-item-50-non-fluid" id="footer-copy"></div>
+          <div class="flex-item-non-fluid flex-item-50-non-fluid text-right">
+            <a class="footer-social-icon" href="https://www.linkedin.com/in/suchinlin" target="_blank">
+              <ion-icon class="social-icon" name="logo-linkedin"></ion-icon> LinkedIn
+            </a>
+            <a class="footer-social-icon" href="mailto:iamsuchinlin@example.com" target="_blank">
+              <ion-icon class="social-icon" name="mail-outline"></ion-icon> Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+</html>

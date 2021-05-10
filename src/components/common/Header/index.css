@@ -1,0 +1,20 @@
+.header {
+  font-family: var(--ibm-plex-serif);
+}
+
+.contentContainer {
+  margin: 6.5rem auto 8.5rem;
+}
+
+.rightContent {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navItem {
+  text-transform: uppercase;
+}
+
+.navItem + .navItem {
+  margin-left: 3.125rem;
+}

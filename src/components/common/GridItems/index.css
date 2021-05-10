@@ -1,0 +1,83 @@
+.container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.container.alignTop {
+  align-items: flex-start;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.columnFull {
+  width: 100%;
+}
+
+.columnFull,
+.columnHalf,
+.columnThirds {
+  position: relative;
+}
+
+.gap0 {
+  gap: .5rem;
+}
+
+.gap0 > .columnHalf {
+  width: calc(50% - .25rem);
+}
+
+.gap0 > .columnThirds {
+  width: calc(33.33% - .333rem);
+}
+
+.gap1 {
+  gap: 1rem;
+}
+
+.gap1 > .columnHalf {
+  width: calc(50% - .5rem);
+}
+
+.gap1 > .columnThirds {
+  width: calc(33.33% - .665rem);
+}
+
+.gap2 {
+  gap: 2rem;
+}
+
+.gap2 > .columnHalf {
+  width: calc(50% - 1rem);
+}
+
+.gap2 > .columnThirds {
+  width: calc(33.33% - 1.33rem);
+}
+
+.gap3 {
+  gap: 3rem;
+}
+
+.gap3 > .columnHalf {
+  width: calc(50% - 1.5rem);
+}
+
+.gap3 > .columnThirds {
+  width: calc(33.33% - 2rem);
+}
+
+.gap4 {
+  gap: 4rem;
+}
+
+.gap4 > .columnHalf {
+  width: calc(50% - 2rem);
+}
+
+.gap4 > .columnThirds {
+  width: calc(33.33% - 2.66rem);
+}

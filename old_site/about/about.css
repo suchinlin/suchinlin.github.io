@@ -1,0 +1,18 @@
+.about-photo-375 {
+  max-width: 375px;
+}
+
+.about-photo-500 {
+  max-width: 500px;
+}
+
+
+@media (max-width: 768px) {
+  .about-photo-375 {
+    max-width: 100%
+  }
+
+  .about-photo-500 {
+    max-width: 100%
+  }
+}

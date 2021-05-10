@@ -1,0 +1,68 @@
+.container {
+  box-shadow: var(--box-shadow);
+  border-radius: .625rem;
+  margin: 0 auto;
+}
+
+.container:hover {
+  box-shadow: var(--box-shadow-hovered);
+}
+
+.imageContainer {
+  border-top-right-radius: .625rem;
+  border-top-left-radius: .625rem;
+  align-items: center;
+}
+
+.cardLinkContainer:hover {
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.image {
+  border-top-right-radius: .625rem;
+  border-top-left-radius: .625rem;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.name {
+  font-size: var(--font-size-regular);
+  font-weight: var(--font-weight-400);
+  font-family: var(--ibm-plex-serif);
+}
+
+.cardInfo {
+  padding: 2rem;
+}
+
+.cardLabelContainer {
+  margin-top: var(--margin-16);
+  height: 150px;
+}
+
+.labelTitle {
+  font-family: var(--ibm-plex-serif);
+  font-weight: var(--font-weight-400);
+}
+
+.labelItems {
+  margin-top: var(--margin-16);
+}
+
+@media (max-width: 1024px) {
+ .cardLabelContainer {
+    font-size: var(--font-size-xsmall);
+ }
+}
+
+@media (max-width: 768px) {
+  .cardInfo {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+
+}
