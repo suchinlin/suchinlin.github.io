@@ -414,7 +414,7 @@ class CaseStudyTwitter extends React.Component {
               <TabTitleSection title="Ideate">
                 <div className="ibm-plex-serif uppercase font-400">User flow reversal and inspirations</div>
                 <p className="p-text margin-top-16">
-                  The deeper discoveries inspired me to reverse the current user flow
+                  The discoveries above inspired me to reverse the current user flow
                   to allow users to create their tweet first then browse and select
                   evidence to support their tweet based on keywords and hashtags in the tweet.
                 </p>
@@ -432,9 +432,7 @@ class CaseStudyTwitter extends React.Component {
               </div>
 
               <p className="p-text margin-top-50">
-                With my plan of action laid out, I next sought out some inspirations
-                from some competitors to stay in line of the constraints I outlined for
-                myself to make my project&apos;s user experience easy and familiar for the user.
+                I next sought out some inspirations from some competitors to see if I can design an easy and familiar experience for the user.
               </p>
 
               <div className={`${styles.inspirationImageContainer} margin-top-50`}>
@@ -480,6 +478,7 @@ class CaseStudyTwitter extends React.Component {
                 </div>
               </TabTitleSection>
 
+              <div className="ibm-plex-serif uppercase font-400 text-left margin-top-50">New Navigation Flow</div>
               <div className="margin-top-50 text-center">
                 <img src={wireframeImage} />
               </div>
