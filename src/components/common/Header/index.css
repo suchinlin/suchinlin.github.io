@@ -4,6 +4,15 @@
 
 .contentContainer {
   margin: 6.5rem auto 8.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftContent {
+  font-size: 30px;
+  letter-spacing: .8rem;
+  text-transform: uppercase;
 }
 
 .rightContent {
@@ -17,4 +26,29 @@
 
 .navItem + .navItem {
   margin-left: 3.125rem;
+}
+
+.headerHomeLink {
+  text-decoration: none;
+}
+
+.headerHomeLink:hover {
+  color: var(--red);
+  text-decoration: none;
+}
+
+.navItemLink:hover {
+  color: var(--red);
+}
+
+
+@media (max-width: 500px) {
+  .leftContent {
+    font-size: var(--font-size-regular);
+    letter-spacing: .2rem;
+  }
+
+  .navItem + .navItem {
+    margin-left: 1rem;
+  }
 }

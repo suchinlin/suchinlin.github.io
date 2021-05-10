@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <div className={styles.subContent}>
           <div className={styles.leftContent}>
-            This portfolio has been crafted 100%  CMS-free with love & care.<br/>
+            This site was personally designed with love and care, CMS free.<br/>
             Thank you for taking time out to come by & get to know me.
           </div>
           <div className={styles.rightContent}>

@@ -1,6 +1,5 @@
 
 const path = require('path');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -58,13 +57,6 @@ module.exports = {
       }
     ]
   },
-  // plugins: [
-  //     new HtmlWebpackPlugin({
-  //         template: __dirname + '/src/index.html',
-  //         filename: 'index.html',
-  //         inject: 'body'
-  //     })
-  // ]
   devServer: {
     historyApiFallback: {
       rewrites: [{ from: /\//, to: '/index.html' }],

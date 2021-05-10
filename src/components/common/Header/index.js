@@ -7,12 +7,15 @@ const Header = () => {
   return (
     <header className={`${styles.header} with-content-padding`}>
       <div className={styles.contentContainer}>
+        <div className={styles.leftContent}>
+          <Link to="/" className={styles.headerHomeLink}>suchinlin</Link>
+        </div>
         <div className={styles.rightContent}>
           <div className={styles.navItem}>
-            <Link to="/">work</Link>
+            <Link className={styles.navItemLink} to="/">work</Link>
           </div>
           <div className={styles.navItem}>
-            <Link to="/about">about</Link>
+            <Link className={styles.navItemLink} to="/about">about</Link>
           </div>
         </div>
       </div>
