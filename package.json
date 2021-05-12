@@ -21,7 +21,7 @@
     "eslint": "^7.23.0",
     "eslint-plugin-react": "^7.23.1",
     "file-loader": "^6.2.0",
-    "postcss": "^8.2.9",
+    "postcss": "^8.2.10",
     "postcss-loader": "^5.2.0",
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1",
