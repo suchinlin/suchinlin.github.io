@@ -487,7 +487,7 @@ class CaseStudyTwitter extends React.Component {
                 <GridItems columns={isMobile ? 1 : 2}>
                   <img className={styles.tweetDiagram} src={proTweetDiagramImage} />
                   <div className={styles.tweetDiagramText}>
-                    <div className="ibm-plex-serif uppercase font-400">Pro-tweets&quot; highlights</div>
+                    <div className="ibm-plex-serif uppercase font-400">Pro-tweets highlights</div>
                     <ol>
                       <li className={styles.tweetDiagramListItem}>
                         Pro-Tweets results sourced by similar keywords and hashtags in the user’s tweet.
