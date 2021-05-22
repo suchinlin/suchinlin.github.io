@@ -24,7 +24,7 @@ const Footer = () => {
               <div>Feel free to reach out to connect!</div>
               <a
                 className={styles.socialContact}
-                href="mailto:iamsuchinlin@gmail.com"
+                href="mailto:suchinUX@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 onMouseEnter={() => setIsHovered(true)}
@@ -36,7 +36,7 @@ const Footer = () => {
                   :
                     <Svg className={styles.emailSvg} image="email" />
                 }
-                iamsuchinlin@gmail.com
+                suchinUX@gmail.com
               </a>
               <a
                 className={styles.socialContact}
