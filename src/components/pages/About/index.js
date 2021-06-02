@@ -6,7 +6,7 @@ import withWindowResize from "components/common/withWindowResize";
 
 import styles from "./index.css";
 import selfImage from "assets/images/about/about-self.png";
-import resumeFile from "assets/resume.pdf";
+import resumeFile from "assets/suchin_lin_resume.pdf";
 
 class About extends React.Component {
 
