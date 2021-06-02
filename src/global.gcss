@@ -24,8 +24,13 @@ li {
 }
 
 a {
+  cursor: pointer;
   color: var(--text-dark);
   text-decoration: none;
+}
+
+p {
+  margin: 1rem 0;
 }
 
 a:hover {

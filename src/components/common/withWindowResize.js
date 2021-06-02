@@ -21,7 +21,7 @@ const withWindowResize = Component => {
     }
 
     isMobile() {
-      return window.innerWidth <= 500;
+      return document.body.offsetWidth <= 500;
     }
 
     handleResize() {

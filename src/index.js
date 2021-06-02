@@ -16,6 +16,7 @@ import About from 'components/pages/About';
 
 import Footer from 'components/common/Footer';
 import Header from 'components/common/Header';
+import ScrollToTop from 'components/common/ScrollToTop';
 
 import styles from './index.css';
 import './index.css';
@@ -58,6 +59,7 @@ function App() {
 
 ReactDOM.render(
   <HashRouter>
+    <ScrollToTop />
     <App />
   </HashRouter>,
   document.getElementById("root")

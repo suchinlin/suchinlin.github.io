@@ -1,84 +1,70 @@
 import React from "react";
+import { bool, shape } from 'prop-types';
 
+import Svg from "components/common/Svg";
+import withWindowResize from "components/common/withWindowResize";
+
+import styles from "./index.css";
 import selfImage from "assets/images/about/about-self.png";
-import designImage from "assets/images/about/about-design.png";
-import inspirationImage from "assets/images/about/about-inspiration.png";
+import resumeFile from "assets/resume.pdf";
 
 class About extends React.Component {
 
   render() {
+    const {
+      size: { isMobile }
+    } = this.props;
+
     return (
-      <div className="legacy-body">
-        <div className="container content with-content-padding">
-          <div className="flex-space-between-aligned srow">
-            <div className="flex-item flex-item-50">
-              <img className="box-shadow about-photo-375" src={selfImage} />
-            </div>
-            <div className="flex-item flex-item-50">
-              <h2 className="title green">About me</h2>
-              <p>
-                I'm a UX Designer coming to the tech space with 10 years of professional experience
-                in healthcare working as a registered nurse in New York!
-              </p>
-              <p>
-                I was born in Queens, raised in Brooklyn, and am now pursuing my UX dream in San Francisco!
-              </p>
-            </div>
+      <div className={`${styles.aboutContainer} with-content-padding`}>
+        <h1 className={styles.header}>Hello!</h1>
+        {isMobile ? (
+          <div className={styles.mobileImage}>
+            <img src={selfImage} />
           </div>
+        ) : null}
+        <div className={styles.contentContainer}>
+          <div className={styles.content}>
+            <p className={styles.introText}>
+              I&apos;m Suchin Lin, a user experience designer located in San Francisco.
+            </p>
+            <p className="margin-top-50">
+              I worked in healthcare as a registered nurse for 10 years in my hometown, New York,
+              and found I thrived most when applying my compassion, creativity, and attention
+              to detail to improve situations for the people around me not just under my care
+              but also working directly with me.
+            </p>
+            <p>
+              This led me to UX Design - a field where I can dive headfirst into immersing myself
+              into finding meaningful solutions to problems.
+            </p>
+            <p>
+              In San Francisco, I pursued my certification in User Experience Design at
+              General Assembly, graduated in April 2020, and with every project and every
+              learning moment thereafter, I discovered my re-appreciation for research,
+              fascinaton with UI/Interaction design, and deep satisfaction from client
+              and user feedback.
+            </p>
+            <p className="margin-top-50">
+              When I am not designing, outside of being a wanderlust, I’m also a proud dog
+              mom who enjoys dabbling with digital illustration tools, running, hiking, or
+              meditating through mindful street-walking.
+            </p>
 
-          <div className="flex-space-between-aligned srow">
-            <div className="flex-item flex-item-50">
-              <h2 className="title green">When I'm not designing</h2>
-              <p>
-                Find me outdoors hiking, running, and working out!
-              </p>
-              <p>
-                I also have a hobby in modern calligraphy in both English and Korean
-                and aspire to one day create a font of my own!
-              </p>
-              <p>
-                Find me at your nearest park, track, or community race pumped up and knocking down miles!
-              </p>
+            <div className={styles.thankNote}>
+              Thanks for coming by! <Svg className={styles.heartSvg} image="heart" />
             </div>
-            <div className="flex-item flex-item-50">
-              <img className="box-shadow full-width about-photo-500" src={designImage}/>
-            </div>
-          </div>
 
-          <div className="flex-space-between-aligned srow flex-top-align">
-            <div className="flex-item flex-item-50">
-              <h2 className="title green">A few more of my favorite things</h2>
-              <ul className="text">
-                <li>Pilates</li>
-                <li>Doodling</li>
-                <li>Eating Yummy Food</li>
-                <li>All things Ghibli</li>
-              </ul>
-            </div>
-            <div className="flex-item flex-item-50">
-              <h2 className="title green">Upcoming goals</h2>
-               <ul className="text">
-                  <li>UX Hackathon</li>
-                  <li>Chicago Marathon</li>
-                  <li>Modern Caligraphy</li>
-                  <li>Korean Caligraphy</li>
-                </ul>
+            <div className={styles.psNote}>
+              <span className={styles.ps}>P.S.</span>
+              For a list of my professional works, please <a className={styles.resumeLink} target="_blank" rel="noopener noreferrer" href={resumeFile}>download my resume</a>.
             </div>
           </div>
-
-          <div className="flex-space-between-aligned srow">
-            <div className="flex-item flex-item-50">
-              <img className="box-shadow about-photo-375" src={inspirationImage} />
+          {!isMobile ? (
+            <div className={styles.image}>
+              <img src={selfImage} />
             </div>
-            <div className="flex-item flex-item-50">
-              <h2 className="title green">Recent Inspiration</h2>
-              <p>
-                A friend of mine introduced this poem to me and I found it very inspirational
-                and applicable to me because not only does it talk about NY and CA but more
-                especially about appreciating my journey and where I am in my life.
-              </p>
-            </div>
-          </div>
+          ) : null}
         </div>
       </div>
     );
@@ -86,8 +72,9 @@ class About extends React.Component {
 }
 
 About.propTypes = {
+  size: shape({ isMobile: bool }).isRequired,
 };
 
 About.defaultProps = {};
 
-export default About;
+export default withWindowResize(About);

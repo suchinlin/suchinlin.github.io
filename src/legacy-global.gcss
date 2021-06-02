@@ -110,8 +110,8 @@
   --spacing-normal: 30px;
   --spacing-large: 60px;
   --spacing-xlarge: 120px;
-  --green: #49BDAC;
-  --green-darken: #389b8c;
+  --green: #f46b8b; /* change to pink to match color */
+  --green-darken: #f46b8b; /* change to pink to match color */
   --white: #FFFFFF;
   --light-grey: #D3D3D3;
   --grey: #b9b9b9;

@@ -50,9 +50,9 @@ module.exports = {
         }
       },
       {
-        test: /\.(mp4|mov)$/,
+        test: /\.(mp4|mov|pdf)$/,
         use: {
-          loader: 'file-loader?name=img/[name].[ext]'
+          loader: 'file-loader?name=assets/[name].[ext]'
         }
       }
     ]

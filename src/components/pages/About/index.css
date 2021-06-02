@@ -1,0 +1,80 @@
+.aboutContainer {
+  font-family: var(--ibm-plex-serif);
+}
+
+.header {
+  font-family: var(--petit-formal-script);
+  font-size: 6.25rem;
+  margin-bottom: 3.125rem;
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  display:  block;
+  width: 80%;
+  height: 100px;
+  background: var(--baby-pink);
+}
+
+.introText {
+  font-weight: var(--font-weight-400);
+  margin-top: 0;
+}
+
+.thankNote {
+  margin-top: var(--margin-50);
+  display: flex;
+  align-items: center;
+}
+
+.heartSvg {
+  width: 30px;
+  margin-left: 2rem;
+}
+
+.psNote {
+  margin-top: var(--margin-50);
+}
+
+.ps {
+  font-family: var(--petit-formal-script);
+  margin-right: 1rem;
+}
+
+.resumeLink {
+  color: var(--red);
+}
+
+.resumeLink:hover {
+  color: var(--red);
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  min-width: 300px;
+  margin-left: var(--margin-100);
+}
+
+.mobileImage {
+  margin-bottom:  var(--margin-50);
+}
+
+@media (max-width: 500px) {
+  .header {
+    font-size: calc(var(--font-size-large) * 2);
+  }
+
+  .header::after {
+    bottom: 50px;
+    height: 80px;
+  }
+}
