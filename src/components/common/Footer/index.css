@@ -5,28 +5,28 @@
   font-family: var(--ibm-plex-serif);
 }
 
-.header {
-  font-size: 30px;
-  letter-spacing: .8rem;
-  text-transform: uppercase;
+.logoContainer {
+  line-height: 0;
+  /* logo is 92px but size is 100px with padding */
+  margin-left: -8px;
 }
 
 .contentContainer {
 }
 
-.footerHomeLink {
-  text-decoration: none;
+.logo {
+  width: 100px;
+  height: 100px;
+  transition: fill .2s ease-in;
 }
 
-.footerHomeLink:hover {
-  color: var(--red);
-  text-decoration: none;
+.logo:hover {
+  fill: var(--red);
 }
 
 .subContent {
   margin-top: var(--margin-16);
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 

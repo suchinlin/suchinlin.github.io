@@ -10,8 +10,10 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={`${styles.contentContainer} with-content-padding`}>
-        <div className={styles.header}>
-          <Link to="/" className={styles.footerHomeLink}>suchinlin</Link>
+        <div className={styles.logoContainer}>
+          <Link to="/">
+            <Svg className={styles.logo} icon="logo" />
+          </Link>
         </div>
         <div className={styles.subContent}>
           <div className={styles.leftContent}>

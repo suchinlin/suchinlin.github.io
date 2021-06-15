@@ -16,8 +16,11 @@ import email from 'assets/svgs/email.svg';
 import emailSelected from 'assets/svgs/emailSelected.svg';
 import styles from './index.css';
 
+// flexible icons
+import logo from 'assets/icons/logo'
+
 const iconMapper = {
-  qrCodeOutline: 'sampleSvgIconFile',
+  logo,
 };
 
 const imageMapper = {
@@ -50,11 +53,17 @@ const Svg = (props) => {
     return <img className={imageClass} src={imageMapper[image]} />
   }
 
+  const iconClass = classnames({
+    [className]: className ? true : false
+  });
+
   return (
     <svg
-      className={`ionicon ${icon}`}
+      className={iconClass}
       xmlns="http://www.w3.org/2000/svg"
       viewBox={viewBox}
+      width="30"
+      height="30"
     >
       {iconMapper[icon]}
     </svg>
@@ -66,14 +75,14 @@ Svg.propTypes = {
   className: string,
   image: oneOf(Object.keys(imageMapper)),
   icon: oneOf([
-    'qrCodeOutline',
+    'logo',
   ]),
 };
 
 Svg.defaultProps = {
   className: '',
-  image: '',
-  viewBox: '0 0 32 32',
+  image: null,
+  viewBox: '0 0 1200 1200',
 };
 
 export default Svg;

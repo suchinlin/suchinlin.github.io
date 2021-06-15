@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import ReactDOM from "react-dom";
 // import { createBrowserHistory } from 'history';
 import {
@@ -18,6 +19,8 @@ import Footer from 'components/common/Footer';
 import Header from 'components/common/Header';
 import ScrollToTop from 'components/common/ScrollToTop';
 
+import logo from "assets/svgs/logo.svg";
+
 import styles from './index.css';
 import './index.css';
 import './legacy-global.gcss';
@@ -26,6 +29,9 @@ import './global.gcss';
 function App() {
   return (
     <div className={styles.app}>
+      <Helmet>
+        <link rel="shortcut icon" type="image/x-icon" href={logo}/>
+      </Helmet>
       <Switch>
         <Route exact path="/">
           <Header />

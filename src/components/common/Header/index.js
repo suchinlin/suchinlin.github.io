@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
+import Svg from "components/common/Svg";
+
 import styles from './index.css';
 
 const Header = () => {
@@ -8,7 +10,9 @@ const Header = () => {
     <header className={`${styles.header} with-content-padding`}>
       <div className={styles.contentContainer}>
         <div className={styles.leftContent}>
-          <Link to="/" className={styles.headerHomeLink}>suchinlin</Link>
+          <Link to="/">
+            <Svg className={styles.logo} icon="logo" />
+          </Link>
         </div>
         <div className={styles.rightContent}>
           <div className={styles.navItem}>
