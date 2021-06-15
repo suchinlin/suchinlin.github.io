@@ -1,5 +1,6 @@
 import React from "react";
-import { bool, shape } from 'prop-types';
+import { bool, shape, string } from 'prop-types';
+import { withRouter } from 'react-router-dom';
 
 import CaseStudyCard from "components/common/CaseStudyCard";
 import GridItems from "components/common/GridItems";
@@ -11,6 +12,25 @@ import styles from "./index.css";
 
 
 class Home extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.work = React.createRef();
+  }
+
+  componentDidMount() {
+    const { location: { hash } } = this.props;
+    if (hash === '#work') {
+      this.work.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  componentDidUpdate(prevProps) {
+    const { location: { hash }  } = this.props;
+    if (!prevProps.location.hash && hash === '#work') {
+      this.work.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }
 
   render() {
     const {
@@ -48,7 +68,7 @@ class Home extends React.Component {
           to design satisfying experiences for people.
         </p>
 
-        <div className="divider">
+        <div ref={this.work} className="divider">
           Works
         </div>
 
@@ -64,8 +84,9 @@ class Home extends React.Component {
 
 Home.propTypes = {
   size: shape({ isMobile: bool }).isRequired,
+  location: shape({ hash: string }).isRequired,
 };
 
 Home.defaultProps = {};
 
-export default withWindowResize(Home);
+export default withWindowResize(withRouter(Home));

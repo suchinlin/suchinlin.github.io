@@ -16,7 +16,7 @@ const Header = () => {
         </div>
         <div className={styles.rightContent}>
           <div className={styles.navItem}>
-            <Link className={styles.navItemLink} to="/">work</Link>
+            <Link className={styles.navItemLink} to="/#work" replace>work</Link>
           </div>
           <div className={styles.navItem}>
             <Link className={styles.navItemLink} to="/about">about</Link>
