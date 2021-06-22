@@ -33,7 +33,11 @@ function App() {
   React.useEffect(() => {
     window.gtag('event', 'screen_view', {
       app_name: 'SuchinPortfolio',
-      screen_name: location.pathname
+      screen_name: location.hash || location.pathname
+    });
+    window.gtag('event', 'page_view', {
+      page_location: window.location.href,
+      page_path: location.hash || location.pathname
     });
   }, [location]);
 
