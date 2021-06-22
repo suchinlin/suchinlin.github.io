@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 import {
   // BrowserRouter as Router,
   HashRouter,
+  useLocation,
   Switch,
   Route
 } from "react-router-dom";
@@ -27,6 +28,14 @@ import './legacy-global.gcss';
 import './global.gcss';
 
 function App() {
+  const location = useLocation();
+
+  React.useEffect(() => {
+    window.gtag('event', 'page_view', {
+      page_path: location.pathname
+    });
+  }, [location]);
+
   return (
     <div className={styles.app}>
       <Helmet>
