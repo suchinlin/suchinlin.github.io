@@ -7,11 +7,24 @@ import styles from './index.css';
 
 const Footer = () => {
   const [isHovered, setIsHovered] = useState(false);
+
+  const trackFooterLogoClick = () => {
+    window.gtag('event', 'footer_logo_click');
+  }
+
+  const trackSendEmailClick = () => {
+    window.gtag('event', 'send_email_link_click');
+  }
+
+  const trackLinkedInClick = () => {
+    window.gtag('event', 'linkedIn_link_click');
+  }
+
   return (
     <footer className={styles.footer}>
       <div className={`${styles.contentContainer} with-content-padding`}>
         <div className={styles.logoContainer}>
-          <Link to="/">
+          <Link onClick={trackFooterLogoClick} to="/">
             <Svg className={styles.logo} icon="logo" />
           </Link>
         </div>
@@ -25,6 +38,7 @@ const Footer = () => {
             <div className={styles.contactContainer}>
               <div>Feel free to reach out to connect!</div>
               <a
+                onClick={trackSendEmailClick}
                 className={styles.socialContact}
                 href="mailto:suchinUX@gmail.com"
                 target="_blank"
@@ -41,6 +55,7 @@ const Footer = () => {
                 suchinUX@gmail.com
               </a>
               <a
+                onClick={trackLinkedInClick}
                 className={styles.socialContact}
                 href="https://www.linkedin.com/in/suchinlin"
                 target="_blank"

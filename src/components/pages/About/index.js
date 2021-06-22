@@ -10,6 +10,10 @@ import resumeFile from "assets/suchin_lin_resume.pdf";
 
 class About extends React.Component {
 
+  trackResumeClick() {
+    window.gtag('event', 'resume_link_click');
+  }
+
   render() {
     const {
       size: { isMobile }
@@ -57,7 +61,7 @@ class About extends React.Component {
 
             <div className={styles.psNote}>
               <span className={styles.ps}>P.S.</span>
-              For a list of my professional works, please <a className={styles.resumeLink} target="_blank" rel="noopener noreferrer" href={resumeFile}>download my resume</a>.
+              For a list of my professional works, please <a className={styles.resumeLink} onClick={this.trackResumeClick} target="_blank" rel="noopener noreferrer" href={resumeFile}>download my resume</a>.
             </div>
           </div>
           {!isMobile ? (

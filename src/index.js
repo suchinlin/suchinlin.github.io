@@ -31,8 +31,9 @@ function App() {
   const location = useLocation();
 
   React.useEffect(() => {
-    window.gtag('event', 'page_view', {
-      page_path: location.pathname
+    window.gtag('event', 'screen_view', {
+      app_name: 'SuchinPortfolio',
+      screen_name: location.pathname
     });
   }, [location]);
 
