@@ -179,8 +179,7 @@ class CaseStudyMada extends React.Component {
               <p className="small-font text-center">
                 During this phase hosts decide things like <u className="text">sharing their dinner experience</u> on
                 social media, <u className="text">following up</u> with guests, providing <u className="text">feedback</u> to our client on how
-                their dinner went, and/or, hopefully, anticipating or <u className="text">planning another</u>
-                future MADA dinner event.
+                their dinner went, and/or, hopefully, anticipating or <u className="text">planning another</u> future MADA dinner event.
               </p>
             </div>
           </div>
