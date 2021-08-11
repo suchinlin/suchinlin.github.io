@@ -35,8 +35,8 @@
   --font-weight-700: 700;
 
   /* shadows */
-  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  --box-shadow-hovered: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  --box-shadow-hovered: 4px 4px 10px rgba(0, 0, 0, 0.25);
 
   font-size: var(--font-size-small);
 }

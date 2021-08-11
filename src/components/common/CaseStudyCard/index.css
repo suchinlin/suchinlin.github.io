@@ -1,17 +1,22 @@
 .container {
+  position: relative;
   box-shadow: var(--box-shadow);
   border-radius: .625rem;
   margin: 0 auto;
+  transition: all .2s ease-in;
+  bottom: 0;
 }
 
 .container:hover {
   box-shadow: var(--box-shadow-hovered);
+  bottom: 5px;
 }
 
 .imageContainer {
   border-top-right-radius: .625rem;
   border-top-left-radius: .625rem;
   align-items: center;
+  line-height: 0;
 }
 
 .cardLinkContainer:hover {
@@ -49,6 +54,7 @@
 
 .labelItems {
   margin-top: var(--margin-16);
+  font-size: var(--font-size-xsmall);
 }
 
 @media (max-width: 1024px) {
