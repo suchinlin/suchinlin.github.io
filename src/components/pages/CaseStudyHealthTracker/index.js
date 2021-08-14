@@ -292,7 +292,7 @@ class CaseStudyHealthTracker extends React.Component {
                   <div className={styles.iconLabelTextContainer}>
                     <IconLabelText
                       icon={<Svg className={styles.greenIcons} image="greenHeart" />}
-                      label="What matters most"
+                      label="WHAT MATTERS MOST"
                     >
                       <p className="p-text">
                         Measurable, quantifiable evidence of improvement
@@ -302,7 +302,7 @@ class CaseStudyHealthTracker extends React.Component {
                   <div className={styles.iconLabelTextContainer}>
                     <IconLabelText
                       icon={<Svg className={styles.greenIcons} image="greenExclamation" />}
-                      label="What matters most"
+                      label="BLOCKERS"
                     >
                       <p className="p-text">
                         Irrelevant data and extra work in inputting or analyzing data
@@ -312,7 +312,7 @@ class CaseStudyHealthTracker extends React.Component {
                   <div className={styles.iconLabelTextContainer}>
                     <IconLabelText
                       icon={<Svg className={styles.greenIcons} image="greenKey" />}
-                      label="What matters most"
+                      label="KEY WORDS TO MY USER"
                     >
                     <p className="p-text">
                       Numbers, Social, Progress, Improvement, Performance, Relevance, Plateau, Trajectory
@@ -322,7 +322,7 @@ class CaseStudyHealthTracker extends React.Component {
                   <div className={styles.iconLabelTextContainer}>
                     <IconLabelText
                       icon={<Svg className={styles.greenIcons} image="greenQuestion" />}
-                      label="What matters most"
+                      label="SEARCHING FOR ANSWERS TO"
                     >
                       <p className="p-text">
                         How did I perform during my workout or activity?<br/>
