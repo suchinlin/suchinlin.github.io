@@ -80,7 +80,7 @@ class CaseStudyCard extends React.Component {
           <div className={styles.name}>Health Tracker</div>
           <div className={styles.cardLabelContainer}>
             <GridItems alignTop columns={1}>
-              <div className={styles.labelTitle}>Client Design Challenge</div>
+              <div className={styles.labelTitle}>Design Challenge</div>
               <div>
                 <div className={styles.labelTitle}>Key highlights</div>
                 <div className={styles.labelItems}>
