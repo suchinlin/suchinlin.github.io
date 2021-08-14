@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 
 import CaseStudyTwitter from 'components/pages/CaseStudyTwitter';
+import CaseStudyHealthTracker from 'components/pages/CaseStudyHealthTracker';
 import CaseStudyMada from 'components/pages/CaseStudyMada';
 import Home from 'components/pages/Home';
 import About from 'components/pages/About';
@@ -59,6 +60,11 @@ function App() {
         <Route path="/case-study/protweet">
           <Header />
           <CaseStudyTwitter />
+          <Footer />
+        </Route>
+        <Route path="/case-study/health-tracker">
+          <Header />
+          <CaseStudyHealthTracker />
           <Footer />
         </Route>
         <Route path="/case-study/mada">

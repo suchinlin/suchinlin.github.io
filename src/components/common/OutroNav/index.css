@@ -56,7 +56,12 @@
   border-bottom-right-radius: .625rem;
 }
 
+.stepContainer:hover .svgImage {
+  transform: scale(1.2);
+}
+
 .svgImage {
+  transition: transform .1s ease-in;
   width: 30px;
   height: 30px;
 }

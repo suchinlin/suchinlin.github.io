@@ -53,6 +53,11 @@
 
 
 @media (max-width: 500px) {
+
+  .contentContainer {
+    margin: 2.5rem auto;
+  }
+
   .leftContent {
     font-size: var(--font-size-regular);
     letter-spacing: .2rem;

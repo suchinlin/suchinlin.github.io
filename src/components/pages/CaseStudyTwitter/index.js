@@ -23,7 +23,6 @@ import proTweetIconImage from "assets/images/case-study-twitter/protweet_icon.pn
 import proTweetIconIntegrationImage from "assets/images/case-study-twitter/protweet_icon_integration.png";
 import wireframeImage from "assets/images/case-study-twitter/wireframe.png";
 import proTweetDiagramImage from "assets/images/case-study-twitter/pro_tweet_diagram.png";
-import videoContainerImage from "assets/images/case-study-twitter/video_container.png";
 import proTweetVideo from "assets/videos/protweet.mov";
 
 import withWindowResize from "components/common/withWindowResize";
@@ -147,7 +146,7 @@ class CaseStudyTwitter extends React.Component {
           <div className={styles.introInner}>
             <TabTitleSection simple title="Challenge">
               <p className="p-text">
-                Reduce the &quot;human cost&quot; of the infodemic by identifying sources of information
+                Reduce the “human cost” of the infodemic by identifying sources of information
                 consumption and provide a healthier, easy, and familiar method of information sharing.
               </p>
             </TabTitleSection>
@@ -262,12 +261,12 @@ class CaseStudyTwitter extends React.Component {
                     </div>
 
                     <div>
-                      <div className={styles.headlineTitle}>Conspiracy theories - &quot;Hoax&quot;</div>
+                      <div className={styles.headlineTitle}>Conspiracy theories - “Hoax”</div>
                       <a className={`flex-centered ${styles.headlineItem}`} href="https://www.bbc.com/news/stories-52731624" target="_blank" rel="noopener noreferrer">
                         <img className={styles.headlineLogo} src={bbcLogo} />
                         <div className={styles.headlineItemText}>
                           <div className="font-400">Coronavirus: The human cost of misinformation</div>
-                          <div className={styles.headlineItemBody}>&quot;We thought the government was using it to distract us...&quot;</div>
+                          <div className={styles.headlineItemBody}>“We thought the government was using it to distract us...”</div>
                         </div>
                       </a>
                     </div>
@@ -299,10 +298,10 @@ class CaseStudyTwitter extends React.Component {
               <TabTitleSection title="Define">
                 <div className="ibm-plex-serif uppercase font-400">Infodemic</div>
                 <p className="p-text margin-top-16">
-                  As per the W.H.O, an infodemic is &quot;too much information including false or misleading information
+                  As per the W.H.O, an infodemic is “too much information including false or misleading information
                   in digital and physical environments during a disease outbreak. It causes confusion and risk-taking
                   behaviors that can harm health. It also leads to mistrust in health authorities and undermines the
-                  public health response&quot;.
+                  public health response”.
                 </p>
 
                 <div className={`${styles.coronaBubbleContainer} margin-top-50`}>
@@ -339,7 +338,7 @@ class CaseStudyTwitter extends React.Component {
                     By providing an easy and familiar method of evidence-based communication techniques on Twitter,
                     the voices of people that want to spread reliable news can be amplified and also help remind
                     people to share accurate information. In doing this, we can make accurate information
-                    more available, findable, and reduce the rates of the &quot;human costs of misinformation&quot;.
+                    more available, findable, and reduce the rates of the “human costs of misinformation”.
                   </p>
                 </div>
 
@@ -374,21 +373,21 @@ class CaseStudyTwitter extends React.Component {
                 </div>
               </div>
 
-              <div className="ibm-plex-serif uppercase font-400 margin-top-50">What are twitter&apos;s guidelines?</div>
+              <div className="ibm-plex-serif uppercase font-400 margin-top-50">What are twitter’s guidelines?</div>
               <div className="margin-top-16 text-center">
                 <div className={`${styles.brandImageContainer} yellow-border-container`}>
                   <img src={twitterBrandImage} />
                 </div>
               </div>
 
-              <div className="ibm-plex-serif uppercase font-400 margin-top-50">What are some of twitter&apos;s current features?</div>
+              <div className="ibm-plex-serif uppercase font-400 margin-top-50">What are some of twitter’s current features?</div>
               <div className="margin-top-16 text-center">
                 <div className={`${styles.featuresImageContainer} grey-bg-container`}>
                   <img src={twitterFeaturesImage} />
                 </div>
               </div>
 
-              <div className="ibm-plex-serif uppercase font-400 margin-top-50">What is Twitter&apos;s current user Flow?</div>
+              <div className="ibm-plex-serif uppercase font-400 margin-top-50">What is Twitter’s current user Flow?</div>
               <div className="margin-top-16 text-center">
                 <div className={`${styles.currentFlowImage} yellow-border-container`}>
                   <img src={twitterCurrentFlowImage} />
@@ -459,7 +458,7 @@ class CaseStudyTwitter extends React.Component {
                 <div className="ibm-plex-serif uppercase font-400 text-left margin-top-50">The Icon</div>
                 <p className="p-text margin-top-16">
                   The icon idea I crafted was intended to evoke feelings of a cross between the keywords of
-                  Twitter&apos;s mission and what Pro-tweets&apos; purpose is - to spread factual information.
+                  Twitter’s mission and what Pro-tweets’ purpose is - to spread factual information.
                   The words and phrases I used to craft were specifically: Science, Centered, Global, Unified, Whole, Professional.
                 </p>
 
@@ -507,16 +506,11 @@ class CaseStudyTwitter extends React.Component {
               </div>
 
               <div className="ibm-plex-serif uppercase font-400 margin-top-50">Demostration of prototype</div>
-              <div className={styles.videoDemoContainer}>
-                {
-                  !isMobile ? <img src={videoContainerImage} /> : null
-                }
-                <div className={styles.videoContainer}>
-                  <video controls autoPlay muted loop>
-                    <source src={proTweetVideo} />
-                    Sorry, your browser doesn&apos;t support embedded videos.
-                  </video>
-                </div>
+              <div className={`${styles.videoDemoContainer} margin-top-150`}>
+                <video className={styles.demoVideo} controls autoPlay muted loop>
+                  <source src={proTweetVideo} />
+                  Sorry, your browser doesn’t support embedded videos.
+                </video>
               </div>
 
               <div className={styles.questionDivider}>
@@ -539,8 +533,8 @@ class CaseStudyTwitter extends React.Component {
                   this case study and my site.
                 </p>
 
-                <p className="p-text margin-top-50">
-                  I also had a great time ideating to not only potentially better a brand&apos;s
+                <p className="p-text margin-top-16">
+                  I also had a great time ideating to not only potentially better a brand’s
                   image but also to help the global community fight against the pandemic and infodemic.
                 </p>
               </TabTitleSection>
@@ -558,6 +552,7 @@ class CaseStudyTwitter extends React.Component {
             More Projects
           </div>
           <GridItems columns={ isMobile ? 1 : 2} gap={4}>
+            <CaseStudyCard name="healthTracker"/>
             <CaseStudyCard name="mada"/>
           </GridItems>
         </div>

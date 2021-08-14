@@ -14,6 +14,10 @@ import question from 'assets/svgs/question.svg';
 import heart from 'assets/svgs/heart.svg';
 import email from 'assets/svgs/email.svg';
 import emailSelected from 'assets/svgs/emailSelected.svg';
+import greenExclamation from 'assets/svgs/green_exclamation.svg';
+import greenHeart from 'assets/svgs/green_heart.svg';
+import greenQuestion from 'assets/svgs/green_question.svg';
+import greenKey from 'assets/svgs/green_key.svg';
 import styles from './index.css';
 
 // flexible icons
@@ -28,6 +32,10 @@ const imageMapper = {
   question,
   heart,
   glass,
+  greenExclamation,
+  greenHeart,
+  greenKey,
+  greenQuestion,
   check,
   lightbulb,
   pen,

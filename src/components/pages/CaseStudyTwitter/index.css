@@ -215,7 +215,7 @@
 }
 
 .videoDemoContainer {
-  width: 533px;
+  width: 100%;
   margin: var(--margin-16) auto 0;
   position: relative;
   text-align: center;
@@ -223,12 +223,8 @@
   line-height: 0;
 }
 
-.videoContainer {
-  position: absolute;
-  top: 98px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
+.demoVideo {
+  width: 400px;
 }
 
 .tweetDiagram {
@@ -295,6 +291,14 @@
 }
 
 @media (max-width: 500px) {
+  .header {
+    font-size: var(--font-size-large);
+  }
+
+  .demoVideo {
+    width: 350px;
+  }
+
   .splashContainer {
     flex-wrap: wrap;
   }
@@ -324,16 +328,6 @@
 
   .introProcessRight {
     margin-top: 2rem;
-  }
-
-  .videoDemoContainer {
-    width: 100%;
-  }
-
-  .videoContainer {
-    position: relative;
-    top: 0;
-    margin-top: var(--margin-50);
   }
 
   .tweetDiagramText {

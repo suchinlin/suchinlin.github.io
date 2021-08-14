@@ -2,6 +2,7 @@ import React from "react";
 import { oneOf } from "prop-types";
 import { Link } from "react-router-dom";
 
+import healthTrackerCardImage from "assets/images/health_tracker_card.png";
 import proTweetCardImage from "assets/images/protweet_card.png";
 import madaCardImage from "assets/images/mada_card.png";
 
@@ -69,12 +70,43 @@ class CaseStudyCard extends React.Component {
     );
   }
 
+  renderHealthTracker() {
+    return (
+      <Link className={styles.cardLinkContainer} to="/case-study/health-tracker">
+        <div className={styles.imageContainer}>
+          <img className={styles.image} src={healthTrackerCardImage} />
+        </div>
+        <div className={styles.cardInfo}>
+          <div className={styles.name}>Health Tracker</div>
+          <div className={styles.cardLabelContainer}>
+            <GridItems alignTop columns={1}>
+              <div className={styles.labelTitle}>Client Design Challenge</div>
+              <div>
+                <div className={styles.labelTitle}>Key highlights</div>
+                <div className={styles.labelItems}>
+                  <GridItems columns={2} gap={0}>
+                    <div>Mobile-first</div>
+                    <div>User Research</div>
+                    <div>Iconography</div>
+                    <div>Interaction Design</div>
+                  </GridItems>
+                </div>
+              </div>
+            </GridItems>
+          </div>
+        </div>
+      </Link>
+    );
+  }
+
   renderCard(name) {
     switch (name) {
       case "mada":
         return this.renderMada();
       case "protweet":
         return this.renderProTweet();
+      case "healthTracker":
+        return this.renderHealthTracker();
     }
   }
 
@@ -89,7 +121,7 @@ class CaseStudyCard extends React.Component {
 }
 
 CaseStudyCard.propTypes = {
-  name: oneOf(["mada", "protweet"]).isRequired,
+  name: oneOf(["mada", "protweet", "healthTracker"]).isRequired,
 };
 
 export default CaseStudyCard;

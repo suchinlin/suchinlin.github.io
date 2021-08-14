@@ -13,6 +13,7 @@
 
   /* borders */
   --border-color: #eeeeee;
+  --border-radius: .625rem;
 
   /* margins */
   --margin-16: 1rem;
