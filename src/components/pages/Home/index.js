@@ -75,7 +75,6 @@ class Home extends React.Component {
         <GridItems columns={ isMobile ? 1 : 2} gap={4}>
           <CaseStudyCard name="protweet"/>
           <CaseStudyCard name="mada"/>
-          <CaseStudyCard name="baymade"/>
         </GridItems>
       </div>
     );

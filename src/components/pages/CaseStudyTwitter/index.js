@@ -559,7 +559,6 @@ class CaseStudyTwitter extends React.Component {
           </div>
           <GridItems columns={ isMobile ? 1 : 2} gap={4}>
             <CaseStudyCard name="mada"/>
-            <CaseStudyCard name="baymade"/>
           </GridItems>
         </div>
       </div>

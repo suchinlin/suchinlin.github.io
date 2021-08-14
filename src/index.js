@@ -12,7 +12,6 @@ import {
 
 import CaseStudyTwitter from 'components/pages/CaseStudyTwitter';
 import CaseStudyMada from 'components/pages/CaseStudyMada';
-import CaseStudyBaymade from 'components/pages/CaseStudyBaymade';
 import Home from 'components/pages/Home';
 import About from 'components/pages/About';
 
@@ -65,11 +64,6 @@ function App() {
         <Route path="/case-study/mada">
           <Header />
           <CaseStudyMada />
-          <Footer />
-        </Route>
-        <Route path="/case-study/baymade">
-          <Header />
-          <CaseStudyBaymade />
           <Footer />
         </Route>
       </Switch>

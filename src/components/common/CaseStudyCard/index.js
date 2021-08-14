@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import proTweetCardImage from "assets/images/protweet_card.png";
 import madaCardImage from "assets/images/mada_card.png";
-import baymadeCardImage from "assets/images/baymade_card.png";
 
 import GridItems from "components/common/GridItems";
 
@@ -30,35 +29,6 @@ class CaseStudyCard extends React.Component {
                     <div>Desktop-first</div>
                     <div>User research</div>
                     <div>Usability testing</div>
-                    <div>Low-fidelity prototype</div>
-                  </GridItems>
-                </div>
-              </div>
-            </GridItems>
-          </div>
-        </div>
-      </Link>
-    );
-  }
-
-  renderBaymade() {
-    return (
-      <Link className={styles.cardLinkContainer} to="/case-study/baymade">
-        <div className={styles.imageContainer}>
-          <img className={styles.image} src={baymadeCardImage} />
-        </div>
-        <div className={styles.cardInfo}>
-          <div className={styles.name}>Baymade-Beta</div>
-          <div className={styles.cardLabelContainer}>
-            <GridItems alignTop columns={1}>
-              <div className={styles.labelTitle}>Concept project</div>
-              <div>
-                <div className={styles.labelTitle}>Key highlights</div>
-                <div className={styles.labelItems}>
-                  <GridItems columns={2} gap={0}>
-                    <div>Desktop-first</div>
-                    <div>Information architecture</div>
-                    <div>E-commerce design</div>
                     <div>Low-fidelity prototype</div>
                   </GridItems>
                 </div>
@@ -103,8 +73,6 @@ class CaseStudyCard extends React.Component {
     switch (name) {
       case "mada":
         return this.renderMada();
-      case "baymade":
-        return this.renderBaymade();
       case "protweet":
         return this.renderProTweet();
     }
@@ -121,7 +89,7 @@ class CaseStudyCard extends React.Component {
 }
 
 CaseStudyCard.propTypes = {
-  name: oneOf(["mada", "baymade", "protweet"]).isRequired,
+  name: oneOf(["mada", "protweet"]).isRequired,
 };
 
 export default CaseStudyCard;
