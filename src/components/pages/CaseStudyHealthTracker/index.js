@@ -492,7 +492,7 @@ class CaseStudyHealthTracker extends React.Component {
                   A presentation and feedback session with the company I completed this design
                   challenge for included praises of thoughtfulness as well as advice on designing
                   with intentionality if straying from consistency, particularly in application
-                  of color (ie: solid vs gradient) and optimizing use of Figma when creating
+                  of color (ie: solid vs gradient), and optimizing use of Figma when creating
                   components through use of Figma’s Auto-layout feature.
                 </p>
                 <p className="p-text margin-top-16">
