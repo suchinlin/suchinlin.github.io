@@ -436,7 +436,7 @@ class CaseStudyHealthTracker extends React.Component {
               <div className="margin-top-150 text-center font-400">
                 Prototype
               </div>
-              <div className={`${styles.videoDemoContainer} margin-top-150`}>
+              <div className={`${styles.videoDemoContainer} margin-top-50`}>
                 <video className={styles.demoVideo} controls autoPlay muted loop>
                   <source src={prototypeVideo} />
                   Sorry, your browser doesn&apos;t support embedded videos.
