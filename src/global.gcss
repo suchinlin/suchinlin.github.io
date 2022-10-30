@@ -1,13 +1,15 @@
-@import "~react-image-gallery/styles/css/image-gallery.css";
+/* @import "~react-image-gallery/styles/css/image-gallery.css"; */
 
 html {
   font-size: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   font-weight: 300;
   font-size: 1rem; /* 16px */
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -35,10 +37,9 @@ p {
 }
 
 a:hover {
-  text-decoration: underline;
   text-underline-offset: .3rem;
   color: var(--link-color);
-  transition: all .2s ease-in;
+  transition: all .1s ease-in;
 }
 
 
@@ -163,7 +164,7 @@ a:hover {
 .with-content-padding {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 150px;
+  padding: 0 120px;
 }
 
 .divider {

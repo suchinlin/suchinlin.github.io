@@ -18,6 +18,10 @@ import greenExclamation from 'assets/svgs/green_exclamation.svg';
 import greenHeart from 'assets/svgs/green_heart.svg';
 import greenQuestion from 'assets/svgs/green_question.svg';
 import greenKey from 'assets/svgs/green_key.svg';
+import behance from 'assets/svgs/behance.svg';
+import linkedin from 'assets/svgs/linkedin.svg';
+import instagram from 'assets/svgs/instagram.svg';
+import quoteYellow from 'assets/svgs/quote_yellow.svg';
 import styles from './index.css';
 
 // flexible icons
@@ -42,6 +46,10 @@ const imageMapper = {
   target,
   email,
   emailSelected,
+  behance,
+  linkedin,
+  instagram,
+  quoteYellow,
 }
 
 const Svg = (props) => {

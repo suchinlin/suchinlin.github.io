@@ -1,94 +1,313 @@
 .home {
-  font-family: var(--ibm-plex-serif);
+  color: var(--text-dark);
 }
 
-.introCard {
+.restrict1440 {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+.header {
+  padding-top: 40px;
+  font-weight: var(--font-weight-600);
+  font-size: 56px;
+  line-height: 70px;
+}
+
+.thoughtful {
+  font-weight: var(--font-weight-700);
+  font-style: italic;
+}
+
+.wallImageContainer {
+  margin-top: 140px;
+}
+
+.wallImage {
+  width: 100%;
+}
+
+.worksHeader {
+  font-size: 100px;
+  font-weight: var(--font-weight-700);
+  line-height: 132px;
+  margin: 0;
+}
+
+.worksContainer {
+  text-transform: uppercase;
+  padding-top: 169px;
+}
+
+.workItem {
+  font-size: 100px;
+  font-style: italic;
+  font-weight: var(--font-weight-600);
+  line-height: 60px;
+  margin-top: 40px;
+  user-select: none;
+}
+
+.caseStudyContainer {
+  margin-top: 70px;
+  margin-bottom: 150px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--pink);
-  border-radius: 2.5rem;
 }
 
-.leftContent {
-  padding-left: var(--margin-100);
+.caseStudyItem {
+  width: 300px;
 }
 
-.name {
-  margin-top: 0;
-  font-family: var(--petit-formal-script);
-  letter-spacing: .5rem;
-  font-size: var(--font-size-xlarge);
+.caseStudyItem + .caseStudyItem {
+  margin-left: 50px;
 }
 
-.imageContainer {
-  max-width: 424px;
-  line-height: 0;
+.aboutMe {
+  margin-top: 208px;
 }
 
-.title {
+.aboutMeHeader {
+  font-weight: var(--font-weight-600);
+  font-size: 30px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.aboutMeContent {
+  background: var(--volt);
+  position: relative;
+}
+
+.aboutMeTextContainer {
+  z-index: 2;
+  position: relative;
+  padding: 240px 120px;
+}
+
+.aboutMeText {
+  font-weight: var(--font-weight-700);
+  font-size: 56px;
+  line-height: 42px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.transparentText {
+  color: var(--volt);
+  text-shadow: 0 0 2px #000;
+}
+
+.byTextOne,
+.byTextTwo,
+.byTextThree {
   font-weight: var(--font-weight-400);
-  margin-top: var(--margin-16);
+  line-height: 53px;
+  font-size: 40px;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
 }
 
-.image {
-  border-top-right-radius: 2.5rem;
-  border-bottom-right-radius: 2.5rem;
+.byTextOne {
+  margin-left: 89px;
 }
 
-.middleText {
-  font-family: var(--ibm-plex-serif);
+.byTextTwo {
+  margin-left: 52px;
 }
 
-.bottomText {
-  margin-top: var(--margin-50);
-  font-family: var(--ibm-plex-serif);
+.byTextThree {
+  margin-left: 63px;
 }
 
-.introText {
-  margin-top: var(--margin-150);
+.byTextRight,
+.byTextRightHuman {
+  margin-left: 35px;
+}
+
+.byTextRightHuman {
+  font-weight: var(--font-weight-600);
+  color: var(--teal);
+  letter-spacing: .1em;
+}
+
+.aboutMeImageContainer {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  transition: top .5s ease-out;
+  z-index: -1;
+}
+
+.aboutImage {
+  width: 646px;
+}
+
+.myStory {
+  margin-top: 104px;
+  position: relative;
+  z-index: 2;
+}
+
+.quoteSvg {
+  width: 60px;
+}
+
+.myStoryHeader {
+  font-weight: var(--font-weight-600);
+  font-size: var(--font-size-large);
+  line-height: 40px;
+  font-style: italic;
+  margin-top: 28px;
+}
+
+.myStorySubHeader {
+  font-weight: var(--font-weight-700);
+  font-size: 100px;
+  line-height: 140px;
+}
+
+.myStoryContainer {
+  display: flex;
+  margin-top: 200px;
+}
+
+.myStoryLeft {
+  flex-basis: 50%;
+}
+
+.myStoryRight {
+  flex-basis: 50%;
+  margin-left: 74px;
+}
+
+.storyRightHeader {
+  font-weight: var(--font-weight-400);
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.storyText {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-small);
+  line-height: 24px;
+  margin: 30px 0;
+}
+
+.myMethodContainer {
   text-align: center;
-  line-height: 1.625rem;
-  letter-spacing: .1rem;
+  margin: 300px auto;
 }
 
-@media (max-width: 768px) {
-  .leftContent {
-    padding-left: var(--margin-50);
-  }
-
-  .name {
-    font-size: var(--font-size-large);
-  }
+.myMethodImage {
+  width: 669px;
 }
 
+.myMethods {
+  display: flex;
+  justify-content: space-between;
+}
 
-@media (max-width: 500px) {
+.skillsTools {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+}
 
-  .introCard {
-    flex-wrap: wrap;
-  }
+.methodText {
+  font-weight: var(--font-weight-700);
+  font-size: 60px;
+  line-height: 51px;
+}
 
-  .leftContent {
-    margin: var(--margin-50) 0;
-  }
+.skillsHeader,
+.toolsHeader {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-small);
+  line-height: 24px;
+}
 
-  .name {
-    font-size: var(--font-size-regular);
-  }
+.skillsHeader {
+  margin-top: 100px;
+}
 
-  .imageContainer {
-    max-width: initial;
-    width: 100%;
-  }
+.toolsHeader {
+  margin-top: 50px;
+}
 
-  .bottomText {
-    margin-top: var(--margin-16);
-  }
+.skillsToolsItem {
+  font-weight: var(--font-weight-600);
+  font-size: var(--font-size-small);
+  line-height: 24px;
+}
 
-  .image {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 2.5rem;
-    border-bottom-left-radius: 2.5rem;
-  }
+.toolsYellowBlock {
+  display: block;
+  width: 96px;
+  height: 96px;
+  background: var(--volt);
+}
+
+.resumeButtonContainer {
+  text-align: center;
+  margin: 200px 0;
+}
+
+.resumeButton {
+  background: var(--volt);
+  padding: 30px 60px;
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-regular);
+  letter-spacing: 0.05em;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.resumeButton:hover {
+  background: var(--link-color);
+}
+
+.resumeButton:hover {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.connectTextContainer {
+  background: var(--black);
+  color: var(--white);
+}
+
+.conntextText {
+  padding: 84px 120px;
+  font-size: 100px;
+  font-weight: var(--font-weight-700);
+  line-height: 132px;
+  text-transform: uppercase;
+}
+
+.feedbackContainer {
+  margin-top: 84px;
+  margin-bottom: 300px;
+}
+
+.feedbackHeader {
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: var(--font-weight-700);
+  letter-spacing: .05em;
+}
+
+.emailContainer {
+  margin-top: 63px;
+  font-weight: var(--font-weight-700);
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+}
+
+.mobileText {
+  font-size: 18px;
+  text-align: center;
+  margin: 100px 0;
 }
