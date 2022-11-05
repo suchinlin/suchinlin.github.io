@@ -301,7 +301,7 @@ class Home extends React.Component {
                 And, that’s how I discovered <strong>User Experience Design</strong>.
               </p>
               <p className={styles.storyText}>
-                My career mission is to continue to lend a thoughtful helping hand to those around me and apply my full range of skills to make great designs that deliverh high impact on the improvement of people’s quality of life.
+                My career mission is to continue to lend a thoughtful helping hand to those around me and apply my full range of skills to make great designs that delivery high impact on the improvement of people’s quality of life.
               </p>
             </div>
           </div>
