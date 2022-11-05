@@ -10,7 +10,11 @@ import wallImage from "assets/images/wall.png";
 import aboutSuImage from "assets/images/about_su.png";
 import nycImage from "assets/images/nyc.png";
 import myMethodImage from "assets/images/my_method.png";
-import caseStudyPortfolioRedesignImage from "assets/images/casestudy_portfolio_redesign.png";
+import thumbWebsiteRebrandImage from "assets/images/thumb_website_rebrand.png";
+import thumbHealthTrackerImage from "assets/images/thumb_health_tracker.png";
+import thumbLogoDesignImage from "assets/images/thumb_logo_design.png";
+import thumbProTweetsImage from "assets/images/thumb_pro_tweets.png";
+import thumbComingSoonImage from "assets/images/thumb_coming_soon.png";
 
 import styles from "./index.css";
 
@@ -20,17 +24,25 @@ const CaseStudyItem = ({
   imageSrc
 }) => {
   const handleOnClick = () => {
-    window.gtag('event', `home_works_${name}_click`);
+    if (name) {
+      window.gtag('event', `home_works_${name}_click`);
+    }
   }
   return (
-    <a
-      onClick={handleOnClick}
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img src={imageSrc} />
-    </a>
+    <div className={styles.caseStudyItem}>
+      {
+        link ? (
+          <a
+            onClick={handleOnClick}
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={imageSrc} />
+          </a>
+        ) : <img src={imageSrc} />
+      }
+    </div>
   );
 }
 
@@ -126,25 +138,14 @@ class Home extends React.Component {
   }
 
   render() {
-    const {
-      size: { isMobile }
-    } = this.props;
+    // const {
+    //   size: { isMobile }
+    // } = this.props;
 
     const {
       aboutSectionImageOffset,
       caseStudy,
     } = this.state;
-
-    if (isMobile) {
-      return (
-        <div className={styles.home}>
-          <div className={styles.mobileText}>
-            Mobile version under construction. <br />
-            Please use desktop for complete profile.
-          </div>
-        </div>
-      );
-    }
 
     return (
       <div className={styles.home}>
@@ -166,34 +167,16 @@ class Home extends React.Component {
             {
               caseStudy.uxui ? (
                 <div className={styles.caseStudyContainer}>
-                  <div className={styles.caseStudyItem}>
-                    <CaseStudyItem
-                      imageSrc={caseStudyPortfolioRedesignImage}
-                      link="https://www.behance.net/gallery/155867613/My-Portfolio-Redesign-2022-Edition"
-                      name="portfolio_rework"
-                    />
-                  </div>
-                  <div className={styles.caseStudyItem}>
-                    <CaseStudyItem
-                      imageSrc={caseStudyPortfolioRedesignImage}
-                      link="https://www.behance.net/gallery/155867613/My-Portfolio-Redesign-2022-Edition"
-                      name="portfolio_rework"
-                    />
-                  </div>
-                  <div className={styles.caseStudyItem}>
-                    <CaseStudyItem
-                      imageSrc={caseStudyPortfolioRedesignImage}
-                      link="https://www.behance.net/gallery/155867613/My-Portfolio-Redesign-2022-Edition"
-                      name="portfolio_rework"
-                    />
-                  </div>
-                  <div className={styles.caseStudyItem}>
-                    <CaseStudyItem
-                      imageSrc={caseStudyPortfolioRedesignImage}
-                      link="https://www.behance.net/gallery/155867613/My-Portfolio-Redesign-2022-Edition"
-                      name="portfolio_rework"
-                    />
-                  </div>
+                  <CaseStudyItem
+                    imageSrc={thumbHealthTrackerImage}
+                    link="https://www.behance.net/gallery/156368307/iOS-Health-Tracker-App"
+                    name="health_tracker"
+                  />
+                  <CaseStudyItem
+                    imageSrc={thumbProTweetsImage}
+                    link="https://www.behance.net/gallery/156366863/Protweets-Feature-Design-Concept"
+                    name="protweets"
+                  />
                 </div>
               ) : null
             }
@@ -205,9 +188,11 @@ class Home extends React.Component {
             {
               caseStudy.brand ? (
                 <div className={styles.caseStudyContainer}>
-                  <div className={styles.caseStudyItem}>
-                    <img src={caseStudyPortfolioRedesignImage} />
-                  </div>
+                  <CaseStudyItem
+                    imageSrc={thumbWebsiteRebrandImage}
+                    link="https://www.behance.net/gallery/155867613/My-Portfolio-Redesign-2022-Edition"
+                    name="portfolio_rework"
+                  />
                 </div>
               ) : null
             }
@@ -219,9 +204,11 @@ class Home extends React.Component {
             {
               caseStudy.digital ? (
                 <div className={styles.caseStudyContainer}>
-                  <div className={styles.caseStudyItem}>
-                    <img src={caseStudyPortfolioRedesignImage} />
-                  </div>
+                  <CaseStudyItem
+                    imageSrc={thumbLogoDesignImage}
+                    link="https://www.behance.net/gallery/156359817/Crafting-My-Personal-Logo"
+                    name="personal_logo"
+                  />
                 </div>
               ) : null
             }
@@ -233,9 +220,9 @@ class Home extends React.Component {
             {
               caseStudy.form ? (
                 <div className={styles.caseStudyContainer}>
-                  <div className={styles.caseStudyItem}>
-                    <img src={caseStudyPortfolioRedesignImage} />
-                  </div>
+                  <CaseStudyItem
+                    imageSrc={thumbComingSoonImage}
+                  />
                 </div>
               ) : null
             }
@@ -247,9 +234,9 @@ class Home extends React.Component {
             {
               caseStudy.icon ? (
                 <div className={styles.caseStudyContainer}>
-                  <div className={styles.caseStudyItem}>
-                    <img src={caseStudyPortfolioRedesignImage} />
-                  </div>
+                  <CaseStudyItem
+                    imageSrc={thumbComingSoonImage}
+                  />
                 </div>
               ) : null
             }
@@ -293,7 +280,7 @@ class Home extends React.Component {
             </div>
             <div className={styles.myStoryRight}>
               <div className={styles.storyRightHeader}>
-                <strong>MY STORY</strong> begins in New York City.
+                <strong className={styles.myStoryTitle}>MY STORY</strong> begins in New York City.
               </div>
               <p className={styles.storyText}>
                 Helping people and brightening someone’s day has always brought me great joy.
@@ -420,7 +407,7 @@ class Home extends React.Component {
         </div>
 
         <div className={styles.connectTextContainer} ref={this.contact}>
-          <div className={`${styles.conntextText} ${styles.restrict1440}`}>
+          <div className={`${styles.connectText} ${styles.restrict1440}`}>
             Let&apos;s Connect
           </div>
         </div>

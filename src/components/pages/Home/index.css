@@ -63,6 +63,10 @@
   margin-left: 50px;
 }
 
+.caseStudyItem:hover {
+  box-shadow: var(--box-shadow-hovered);
+}
+
 .aboutMe {
   margin-top: 208px;
 }
@@ -197,10 +201,11 @@
 .myMethodContainer {
   text-align: center;
   margin: 300px auto;
+  width: 100%;
 }
 
 .myMethodImage {
-  width: 669px;
+  max-width: 669px;
 }
 
 .myMethods {
@@ -278,7 +283,7 @@
   color: var(--white);
 }
 
-.conntextText {
+.connectText {
   padding: 84px 120px;
   font-size: 100px;
   font-weight: var(--font-weight-700);
@@ -310,4 +315,257 @@
   font-size: 18px;
   text-align: center;
   margin: 100px 0;
+}
+
+@media (max-width: 1024px) {
+  .restrict1440 {
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .header {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .worksContainer {
+    padding-top: 169px;
+  }
+
+  .workItem {
+    font-size: 80px;
+  }
+
+  .aboutMeTextContainer {
+    padding: 240px 60px;
+  }
+
+  .aboutMeText {
+    font-size: 38px;
+    line-height: 42px;
+    letter-spacing: .2em;
+  }
+
+  .aboutImage {
+    width: 323px;
+  }
+
+  .byTextOne,
+  .byTextTwo,
+  .byTextThree {
+    font-size: 32px;
+  }
+
+  .byTextOne {
+    margin-left: 78px;
+  }
+
+  .byTextTwo {
+    margin-left: 52px;
+  }
+
+  .byTextThree {
+    margin-left: 59px;
+  }
+
+  .myStory {
+    margin-top: 104px;
+  }
+
+  .myStorySubHeader {
+    font-size: 80px;
+  }
+
+  .myStoryContainer {
+    display: block;
+  }
+
+  .myStoryLeft {
+    float: left;
+    width: 50%;
+    padding-right: 30px;
+  }
+
+  .myStoryRight {
+    margin-left: 0;
+  }
+
+  .myStoryTitle {
+    display: block;
+  }
+
+  .storyRightHeader {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .connectText {
+    padding: 84px 60px;
+    font-size: 80px;
+    line-height: 132px;
+  }
+
+  .feedbackContainer {
+    margin-top: 84px;
+    margin-bottom: 200px;
+  }
+
+  .feedbackHeader {
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: .01em;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .restrict1440 {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .header {
+    font-size: 30px;
+    line-height: 52px;
+  }
+
+  .worksContainer {
+    padding-top: calc(169px - 69px);
+  }
+
+  .worksHeader {
+    font-size: 60px;
+  }
+
+  .workItem {
+    font-size: 45px;
+    line-height: 25px;
+  }
+
+  .aboutMe {
+    margin-top: calc(208px - 69px);
+  }
+
+  .aboutMeTextContainer {
+    padding: 140px 30px;
+  }
+
+  .aboutMeText {
+    font-size: 38px;
+    line-height: 42px;
+    letter-spacing: .2em;
+  }
+
+  .byTextOne,
+  .byTextTwo,
+  .byTextThree {
+    display: block;
+    margin-left: 40px;
+  }
+
+  .byTextRight,
+  .byTextRightHuman {
+    margin-left: 10px;
+  }
+
+  .myStory {
+    margin-top: 104px;
+  }
+
+  .myStorySubHeader {
+    font-size: 40px;
+  }
+
+  .myStoryContainer {
+    display: block;
+    margin-top: 100px;
+  }
+
+  .myStoryLeft {
+    padding-right: 20px;
+  }
+
+  .myStoryRight {
+    margin-left: 0;
+  }
+
+  .storyText {
+    line-height: 24px;
+    margin: 20px 0;
+    font-size: var(--font-size-xsmall);
+  }
+
+  .myStoryTitle {
+    display: block;
+  }
+
+  .storyRightHeader {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .methodText {
+    font-size: 30px;
+    line-height: 31px;
+  }
+
+  .myMethodContainer {
+    margin: 150px auto;
+  }
+
+  .skillsTools {
+    margin: 0 -10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skillsToolsItem {
+    font-weight: var(--font-weight-600);
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+  }
+
+  .toolsYellowBlock {
+    width: 89px;
+    height: 89px;
+  }
+
+  .resumeButton {
+    padding: 20px 30px;
+    font-size: var(--font-size-small);
+  }
+
+  .resumeButtonContainer {
+    margin: 150px 0;
+  }
+
+  .connectText {
+    padding: 84px 30px;
+    font-size: 40px;
+    line-height: 62px;
+  }
+
+  .feedbackContainer {
+    margin-top: 84px;
+    margin-bottom: 150px;
+  }
+
+  .feedbackHeader {
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: .01em;
+  }
+
+  .emailContainer {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .aboutImage {
+    width: 100%;
+    opacity: 0.8;
+  }
 }

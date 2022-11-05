@@ -20,7 +20,20 @@
   letter-spacing: .1em;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
+  .contentContainer {
+    margin: 40px auto 90px;
+  }
 
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navItem {
+    font-weight: var(--font-weight-600);
+    text-transform: uppercase;
+    letter-spacing: .02em;
+  }
 }
