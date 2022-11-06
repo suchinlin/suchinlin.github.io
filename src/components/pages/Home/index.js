@@ -25,7 +25,7 @@ const CaseStudyItem = ({
 }) => {
   const handleOnClick = () => {
     if (name) {
-      window.gtag('event', `works_${name}_click`);
+      window.gtag('event', `casestudy_${name}_click`);
     }
   }
   return (
