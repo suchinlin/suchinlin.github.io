@@ -25,7 +25,7 @@ const CaseStudyItem = ({
 }) => {
   const handleOnClick = () => {
     if (name) {
-      window.gtag('event', `home_works_${name}_click`);
+      window.gtag('event', `works_${name}_click`);
     }
   }
   return (
@@ -123,7 +123,7 @@ class Home extends React.Component {
 
   workToggle(type) {
     const { caseStudy } = this.state;
-    window.gtag('event', `home_works_${type}_click`);
+    window.gtag('event', `works_dropdown_${type}_click`);
     this.setState({
       caseStudy: { [type]: !caseStudy[type]}
     })
