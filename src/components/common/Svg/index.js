@@ -3,21 +3,21 @@ import { oneOf, string } from 'prop-types';
 import classnames from 'classnames';
 
 // small icons
-import glass from 'assets/svgs/glass.svg';
-import check from 'assets/svgs/check.svg';
-import lightbulb from 'assets/svgs/lightbulb.svg';
-import pen from 'assets/svgs/pen.svg';
-import target from 'assets/svgs/target.svg';
+// import glass from 'assets/svgs/glass.svg';
+// import check from 'assets/svgs/check.svg';
+// import lightbulb from 'assets/svgs/lightbulb.svg';
+// import pen from 'assets/svgs/pen.svg';
+// import target from 'assets/svgs/target.svg';
 
-import process from 'assets/svgs/process.svg';
-import question from 'assets/svgs/question.svg';
-import heart from 'assets/svgs/heart.svg';
-import email from 'assets/svgs/email.svg';
-import emailSelected from 'assets/svgs/emailSelected.svg';
-import greenExclamation from 'assets/svgs/green_exclamation.svg';
-import greenHeart from 'assets/svgs/green_heart.svg';
-import greenQuestion from 'assets/svgs/green_question.svg';
-import greenKey from 'assets/svgs/green_key.svg';
+// import process from 'assets/svgs/process.svg';
+// import question from 'assets/svgs/question.svg';
+// import heart from 'assets/svgs/heart.svg';
+// import email from 'assets/svgs/email.svg';
+// import emailSelected from 'assets/svgs/emailSelected.svg';
+// import greenExclamation from 'assets/svgs/green_exclamation.svg';
+// import greenHeart from 'assets/svgs/green_heart.svg';
+// import greenQuestion from 'assets/svgs/green_question.svg';
+// import greenKey from 'assets/svgs/green_key.svg';
 import behance from 'assets/svgs/behance.svg';
 import linkedin from 'assets/svgs/linkedin.svg';
 import instagram from 'assets/svgs/instagram.svg';
@@ -32,20 +32,20 @@ const iconMapper = {
 };
 
 const imageMapper = {
-  process,
-  question,
-  heart,
-  glass,
-  greenExclamation,
-  greenHeart,
-  greenKey,
-  greenQuestion,
-  check,
-  lightbulb,
-  pen,
-  target,
-  email,
-  emailSelected,
+  // process,
+  // question,
+  // heart,
+  // glass,
+  // greenExclamation,
+  // greenHeart,
+  // greenKey,
+  // greenQuestion,
+  // check,
+  // lightbulb,
+  // pen,
+  // target,
+  // email,
+  // emailSelected,
   behance,
   linkedin,
   instagram,

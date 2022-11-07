@@ -20,7 +20,7 @@ import ScrollToTop from 'components/common/ScrollToTop';
 
 import logo from "assets/svgs/logo.svg";
 
-import './legacy-global.gcss';
+// import './legacy-global.gcss';
 import './global.gcss';
 import './index.css';
 
