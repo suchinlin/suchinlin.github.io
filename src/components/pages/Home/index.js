@@ -64,7 +64,13 @@ class Home extends React.Component {
     this.contact = React.createRef();
     this.state = {
       aboutSectionImageOffset: 0,
-      caseStudy: {}
+      caseStudy: {
+        uxui: false,
+        brand: false,
+        digital: false,
+        form: false,
+        icon: false,
+      }
     }
   }
 
@@ -124,8 +130,24 @@ class Home extends React.Component {
   workToggle(type) {
     const { caseStudy } = this.state;
     window.gtag('event', `works_dropdown_${type}_click`);
+    const caseStudyState = Object.keys(caseStudy).reduce((initial, item) => {
+      if (type === item) {
+        // turned off
+        return {
+          ...caseStudy,
+          [type]: !caseStudy[type]
+        }
+      }
+
+      return {
+        ...caseStudy,
+        [type]: !caseStudy[type]
+      }
+
+    }, { ...caseStudy });
+
     this.setState({
-      caseStudy: { [type]: !caseStudy[type]}
+      caseStudy: caseStudyState
     })
   }
 

@@ -52,15 +52,14 @@
 .caseStudyContainer {
   margin-top: 70px;
   margin-bottom: 150px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
 }
 
 .caseStudyItem {
-  width: 300px;
-}
-
-.caseStudyItem + .caseStudyItem {
-  margin-left: 50px;
+  width: 100%;
 }
 
 .caseStudyItem:hover {
@@ -567,5 +566,9 @@
   .aboutImage {
     width: 100%;
     opacity: 0.8;
+  }
+
+  .caseStudyContainer {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
