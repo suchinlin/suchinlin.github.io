@@ -10,6 +10,7 @@ import wallImage from "assets/images/wall.png";
 import aboutSuImage from "assets/images/about_su.png";
 import nycImage from "assets/images/nyc.png";
 import myMethodImage from "assets/images/my_method.png";
+import thumbMada from "assets/images/thumb_mada.png";
 import thumbWebsiteRebrandImage from "assets/images/thumb_website_rebrand.png";
 import thumbHealthTrackerImage from "assets/images/thumb_health_tracker.png";
 import thumbLogoDesignImage from "assets/images/thumb_logo_design.png";
@@ -198,6 +199,11 @@ class Home extends React.Component {
                     imageSrc={thumbProTweetsImage}
                     link="https://www.behance.net/gallery/156366863/Protweets-Feature-Design-Concept"
                     name="protweets"
+                  />
+                  <CaseStudyItem
+                    imageSrc={thumbMada}
+                    link="https://www.behance.net/gallery/157245147/UX-Research-Case-Study-for-MADA"
+                    name="mada"
                   />
                 </div>
               ) : null
