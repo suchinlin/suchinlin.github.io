@@ -320,7 +320,7 @@ class Home extends React.Component {
                 This experience was incredibly rewarding and enriching to my soul.
               </p>
               <p className={styles.storyText}>
-                For almost 10 years, I cared and advocated for many patients and families enduring their darkest, most trying times and got to meet and work alongside a lot inspirational people to help our patients persevere.
+                For almost 10 years, I cared and advocated for many patients and families enduring their darkest, most trying times and got to meet and work alongside a lot of inspirational people to help our patients persevere.
               </p>
               <p className={styles.storyText}>
                 But, with every interaction, both with colleagues and patients, I was left wanting to be able to do more, beyond the bedside, beyond the hospital’s walls, to prevent health scares, increase work outcomes, and just overall improve peoples’ quality of life.
