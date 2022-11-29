@@ -15,6 +15,7 @@ import thumbWebsiteRebrandImage from "assets/images/thumb_website_rebrand.png";
 import thumbHealthTrackerImage from "assets/images/thumb_health_tracker.png";
 import thumbLogoDesignImage from "assets/images/thumb_logo_design.png";
 import thumbProTweetsImage from "assets/images/thumb_pro_tweets.png";
+import thumbBeelovedImage from "assets/images/thumb_beeloved.png";
 import thumbComingSoonImage from "assets/images/thumb_coming_soon.png";
 
 import styles from "./index.css";
@@ -216,6 +217,11 @@ class Home extends React.Component {
             {
               caseStudy.brand ? (
                 <div className={styles.caseStudyContainer}>
+                  <CaseStudyItem
+                    imageSrc={thumbBeelovedImage}
+                    link="https://www.behance.net/gallery/158101341/Custom-Brand-Design-for-client"
+                    name="beeloved"
+                  />
                   <CaseStudyItem
                     imageSrc={thumbWebsiteRebrandImage}
                     link="https://www.behance.net/gallery/155867613/My-Portfolio-Redesign-2022-Edition"
