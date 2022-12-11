@@ -10,8 +10,9 @@
   --green: #45dec3;
   --white: #ffffff;
   --light-grey: #f9f9f9;
-  --link-color: #FEF505;
-  --volt: #FEF851;
+  --link-hover-color: #000000;
+  --volt: #FEF505;
+  --volt-light: #FEF851;
   --teal: #2EF1F8;
 
   /* borders */

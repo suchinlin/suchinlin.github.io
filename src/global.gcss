@@ -24,19 +24,19 @@ li {
   list-style: none;
 }
 
+p {
+  margin: 1rem 0;
+}
+
 a {
   cursor: pointer;
   color: var(--text-dark);
   text-decoration: none;
 }
 
-p {
-  margin: 1rem 0;
-}
-
 a:hover {
   text-underline-offset: .3rem;
-  color: var(--link-color);
+  color: var(--link-hover-color);
   transition: all .1s ease-in;
 }
 

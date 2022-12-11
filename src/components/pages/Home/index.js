@@ -285,11 +285,11 @@ class Home extends React.Component {
                 Inspired <span className={styles.byTextOne}>by<span className={styles.byTextRight}>similarities</span></span>
               </div>
               <div className={styles.aboutMeText}>
-                <span className={styles.transparentText}>Intrigued</span>
+                Intrigued
                 <span className={styles.byTextTwo}>by<span className={styles.byTextRight}>differences</span></span>
               </div>
               <div className={styles.aboutMeText}>
-                Impelled <span className={styles.byTextThree}>by<span className={styles.byTextRightHuman}>human needs</span></span>
+                Impelled <span className={styles.byTextThree}>by<span className={styles.byTextRight}>human needs</span></span>
               </div>
               <div className={styles.aboutMeImageContainer} style={{ top: `${aboutSectionImageOffset}px` }}>
                 <img className={styles.aboutImage} src={aboutSuImage} />
@@ -448,8 +448,7 @@ class Home extends React.Component {
 
         <div className={`${styles.feedbackContainer} ${styles.restrict1440}`}>
           <div className={styles.feedbackHeader}>
-            Got feedback or a cool project you want to <br />
-            explore with me? - I’d 💛 to hear from you!
+            Got feedback or a cool project you want to explore with me? - I’d 💛 to hear from you!
           </div>
           <div className={styles.emailContainer}>
             <a
