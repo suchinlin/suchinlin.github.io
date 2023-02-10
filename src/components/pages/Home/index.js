@@ -16,7 +16,8 @@ import thumbHealthTrackerImage from "assets/images/thumb_health_tracker.png";
 import thumbLogoDesignImage from "assets/images/thumb_logo_design.png";
 import thumbProTweetsImage from "assets/images/thumb_pro_tweets.png";
 import thumbBeelovedImage from "assets/images/thumb_beeloved.png";
-import thumbComingSoonImage from "assets/images/thumb_coming_soon.png";
+import thumbDiscordImage from "assets/images/thumb_discord.png";
+// import thumbComingSoonImage from "assets/images/thumb_coming_soon.png";
 
 import styles from "./index.css";
 
@@ -70,8 +71,8 @@ class Home extends React.Component {
         uxui: false,
         brand: false,
         digital: false,
-        form: false,
-        icon: false,
+        // form: false,
+        // icon: false,
       }
     }
   }
@@ -192,6 +193,11 @@ class Home extends React.Component {
               caseStudy.uxui ? (
                 <div className={styles.caseStudyContainer}>
                   <CaseStudyItem
+                    imageSrc={thumbDiscordImage}
+                    link="https://www.behance.net/gallery/163441563/Discord-Dashboard-Concept"
+                    name="discord"
+                  />
+                  <CaseStudyItem
                     imageSrc={thumbHealthTrackerImage}
                     link="https://www.behance.net/gallery/156368307/iOS-Health-Tracker-App"
                     name="health_tracker"
@@ -247,6 +253,7 @@ class Home extends React.Component {
               ) : null
             }
           </div>
+          {/*
           <div className={styles.workItem}>
             <a onClick={() => this.workToggle('form')}>
               Form Design
@@ -275,6 +282,7 @@ class Home extends React.Component {
               ) : null
             }
           </div>
+          */}
         </section>
 
         <section className={styles.aboutMe} ref={this.about}>
