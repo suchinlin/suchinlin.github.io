@@ -22,6 +22,8 @@ import behance from 'assets/svgs/behance.svg';
 import linkedin from 'assets/svgs/linkedin.svg';
 import instagram from 'assets/svgs/instagram.svg';
 import quoteYellow from 'assets/svgs/quote_yellow.svg';
+import downChevron from 'assets/svgs/down_chevron.svg';
+import upChevron from 'assets/svgs/up_chevron.svg';
 import styles from './index.css';
 
 // flexible icons
@@ -47,9 +49,11 @@ const imageMapper = {
   // email,
   // emailSelected,
   behance,
+  downChevron,
   linkedin,
   instagram,
   quoteYellow,
+  upChevron,
 }
 
 const Svg = (props) => {

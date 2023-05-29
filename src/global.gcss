@@ -32,12 +32,13 @@ a {
   cursor: pointer;
   color: var(--text-dark);
   text-decoration: none;
+  transition: all .5s ease-in;
 }
 
 a:hover {
-  text-underline-offset: .3rem;
+  text-underline-offset: 1.5rem;
   color: var(--link-hover-color);
-  transition: all .1s ease-in;
+  text-decoration: underline;
 }
 
 
@@ -201,6 +202,10 @@ a:hover {
 
   .grey-bg-container {
     padding: .5rem;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 }
 

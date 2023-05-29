@@ -17,6 +17,7 @@ import thumbLogoDesignImage from "assets/images/thumb_logo_design.png";
 import thumbProTweetsImage from "assets/images/thumb_pro_tweets.png";
 import thumbBeelovedImage from "assets/images/thumb_beeloved.png";
 import thumbDiscordImage from "assets/images/thumb_discord.png";
+import thumbHealthProfileCardImage from "assets/images/thumb_health_profile_card.png";
 // import thumbComingSoonImage from "assets/images/thumb_coming_soon.png";
 
 import styles from "./index.css";
@@ -68,7 +69,7 @@ class Home extends React.Component {
     this.state = {
       aboutSectionImageOffset: 0,
       caseStudy: {
-        uxui: false,
+        uxui: true,
         brand: false,
         digital: false,
         // form: false,
@@ -192,6 +193,11 @@ class Home extends React.Component {
             {
               caseStudy.uxui ? (
                 <div className={styles.caseStudyContainer}>
+                  <CaseStudyItem
+                    imageSrc={thumbHealthProfileCardImage}
+                    link="https://www.behance.net/gallery/171729807/Health-Profile-Card-Case-Study"
+                    name="health_profile_card"
+                  />
                   <CaseStudyItem
                     imageSrc={thumbDiscordImage}
                     link="https://www.behance.net/gallery/163441563/Discord-Dashboard-Concept"
