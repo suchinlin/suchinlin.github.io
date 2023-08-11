@@ -1,4 +1,5 @@
 .header {
+  padding: 0 20px;
 }
 
 .contentContainer {
@@ -17,13 +18,12 @@
   font-size: var(--font-size-xsmall);
   font-weight: var(--font-weight-600);
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 @media (max-width: 768px) {
-
   .contentContainer {
-    margin: 40px auto 90px;
+    margin: 40px auto 50px;
   }
 
   .logo {
@@ -34,6 +34,6 @@
   .navItem {
     font-weight: var(--font-weight-600);
     text-transform: uppercase;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
   }
 }

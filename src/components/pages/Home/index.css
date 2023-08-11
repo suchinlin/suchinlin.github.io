@@ -9,7 +9,6 @@
 }
 
 .header {
-  padding-top: 40px;
   font-weight: var(--font-weight-600);
   font-size: 56px;
   line-height: 70px;
@@ -22,10 +21,17 @@
 
 .wallImageContainer {
   margin-top: 140px;
+  max-height: 1000px;
+  overflow: hidden;
+  position: relative;
 }
 
 .wallImage {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
 }
 
 .worksHeader {
@@ -36,8 +42,7 @@
 }
 
 .worksContainer {
-  text-transform: uppercase;
-  padding-top: 169px;
+  padding-top: 100px;
 }
 
 .workItem {
@@ -58,8 +63,17 @@
   max-width: 1000px;
 }
 
+.caseStudyContainerFlex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  margin-bottom: 150px;
+}
+
 .caseStudyItem {
-  width: 100%;
+  flex-basis: calc(25% - 20px);
+  margin: 10px;
+  line-height: 0;
 }
 
 .caseStudyItem:hover {
@@ -79,7 +93,9 @@
 
 .aboutMeContent {
   background: var(--volt);
-  position: relative;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
 }
 
 .aboutMeTextContainer {
@@ -92,7 +108,7 @@
   font-weight: var(--font-weight-700);
   font-size: 56px;
   line-height: 42px;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -127,7 +143,7 @@
   position: absolute;
   right: 0;
   top: 100px;
-  transition: top .5s ease-out;
+  transition: top 0.5s ease-out;
   z-index: -1;
 }
 
@@ -154,14 +170,14 @@
 }
 
 .myStorySubHeader {
-  font-weight: var(--font-weight-700);
-  font-size: 100px;
-  line-height: 140px;
+  font-weight: var(--font-weight-600);
+  font-size: 20px;
+  line-height: 40px;
 }
 
 .myStoryContainer {
   display: flex;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .myStoryLeft {
@@ -188,7 +204,7 @@
 
 .myMethodContainer {
   text-align: center;
-  margin: 300px auto;
+  margin: 200px auto;
   width: 100%;
 }
 
@@ -244,26 +260,24 @@
 
 .resumeButtonContainer {
   text-align: center;
-  margin: 200px 0;
+  margin-top: 100px;
 }
 
 .resumeButton {
-  background: var(--volt);
+  background: var(--white);
   padding: 30px 60px;
   font-weight: var(--font-weight-700);
   font-size: var(--font-size-regular);
   letter-spacing: 0.05em;
   line-height: 32px;
   text-transform: uppercase;
+  border: 2px solid var(--black);
 }
 
 .resumeButton:hover {
-  background: var(--volt-light);
-}
-
-.resumeButton:hover {
+  background: var(--black);
+  color: var(--white);
   text-decoration: none;
-  color: var(--text-dark);
 }
 
 .connectTextContainer {
@@ -272,30 +286,26 @@
 }
 
 .connectText {
+  margin-top: 150px;
   padding: 84px 120px;
-  font-size: 100px;
+  font-size: 56px;
   font-weight: var(--font-weight-700);
   line-height: 132px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .feedbackContainer {
-  margin-top: 84px;
-  margin-bottom: 300px;
+  padding: 250px 0;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
 }
 
 .feedbackHeader {
-  font-size: 30px;
+  font-size: var(--font-size-regular);
   line-height: 50px;
   font-weight: var(--font-weight-700);
-}
-
-.emailContainer {
-  margin-top: 63px;
-  font-weight: var(--font-weight-700);
-  font-size: 22px;
-  line-height: 29px;
-  letter-spacing: 0.05em;
 }
 
 .mobileText {
@@ -330,7 +340,7 @@
   .aboutMeText {
     font-size: 38px;
     line-height: 42px;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
   }
 
   .aboutImage {
@@ -357,10 +367,6 @@
 
   .myStory {
     margin-top: 104px;
-  }
-
-  .myStorySubHeader {
-    font-size: 80px;
   }
 
   .myStoryContainer {
@@ -400,11 +406,14 @@
   .feedbackHeader {
     font-size: 30px;
     line-height: 50px;
-    letter-spacing: .01em;
+    letter-spacing: 0.01em;
   }
 
+  .caseStudyItem {
+    flex: 1 1 calc(50% - 30px);
+    margin: 15px;
+  }
 }
-
 
 @media (max-width: 768px) {
   .restrict1440 {
@@ -412,9 +421,13 @@
     padding: 0 20px;
   }
 
+  .wallImageContainer {
+    margin-top: 50px;
+  }
+
   .header {
     font-size: 30px;
-    line-height: 52px;
+    line-height: 36px;
   }
 
   .worksContainer {
@@ -441,7 +454,7 @@
   .aboutMeText {
     font-size: 38px;
     line-height: 42px;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
   }
 
   .byTextOne,
@@ -459,13 +472,9 @@
     margin-top: 104px;
   }
 
-  .myStorySubHeader {
-    font-size: 40px;
-  }
-
   .myStoryContainer {
     display: block;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .myStoryLeft {
@@ -497,7 +506,7 @@
   }
 
   .myMethodContainer {
-    margin: 150px auto;
+    margin: 100px auto;
   }
 
   .skillsTools {
@@ -522,10 +531,6 @@
     font-size: var(--font-size-small);
   }
 
-  .resumeButtonContainer {
-    margin: 150px 0;
-  }
-
   .connectText {
     padding: 84px 30px;
     font-size: 40px;
@@ -540,19 +545,26 @@
   .feedbackHeader {
     font-size: 18px;
     line-height: 36px;
-    letter-spacing: .01em;
-  }
-
-  .emailContainer {
-    font-size: 18px;
+    letter-spacing: 0.01em;
   }
 }
-
 
 @media (max-width: 500px) {
   .aboutImage {
     width: 100%;
     opacity: 0.8;
+  }
+
+  .worksContainer {
+    padding-top: calc(169px - 120px);
+  }
+
+  .aboutMe {
+    margin-top: 49px;
+  }
+
+  .caseStudyItem {
+    flex: 1 1 100%;
   }
 
   .caseStudyContainer {

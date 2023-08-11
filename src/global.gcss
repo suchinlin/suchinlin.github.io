@@ -32,7 +32,7 @@ a {
   cursor: pointer;
   color: var(--text-dark);
   text-decoration: none;
-  transition: all .5s ease-in;
+  transition: all .2s ease-in;
 }
 
 a:hover {
@@ -211,6 +211,6 @@ a:hover {
 
 @media (max-width: 500px) {
   .with-content-padding {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 }

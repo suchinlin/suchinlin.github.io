@@ -180,7 +180,7 @@ class Home extends React.Component {
     return (
       <div className={styles.home}>
         <h1 className={`${styles.header} ${styles.restrict1440}`}>
-          Hello! I’m Suchin Lin, a UX Designer. <br />
+          Hello! I&apos;m Suchin Lin, a UX Designer. <br />
           And, I&apos;m bringing my love & passion for helping people with{" "}
           <span className={styles.thoughtful}>thoughtful</span> solutions from
           healthcare to now design.
@@ -194,8 +194,50 @@ class Home extends React.Component {
           className={`${styles.worksContainer} ${styles.restrict1440}`}
           ref={this.work}
         >
-          <h1 className={styles.worksHeader}>Works</h1>
-          <div className={styles.workItem}>
+          <h1 className={`${styles.header}`}>Works</h1>
+          <div className={styles.caseStudyContainerFlex}>
+            <CaseStudyItem
+              imageSrc={thumbHealthProfileCardImage}
+              link="https://www.behance.net/gallery/171729807/Health-Profile-Card-Case-Study"
+              name="health_profile_card"
+            />
+            <CaseStudyItem
+              imageSrc={thumbDiscordImage}
+              link="https://www.behance.net/gallery/163441563/Discord-Dashboard-Concept"
+              name="discord"
+            />
+            <CaseStudyItem
+              imageSrc={thumbHealthTrackerImage}
+              link="https://www.behance.net/gallery/156368307/iOS-Health-Tracker-App"
+              name="health_tracker"
+            />
+            <CaseStudyItem
+              imageSrc={thumbProTweetsImage}
+              link="https://www.behance.net/gallery/156366863/Protweets-Feature-Design-Concept"
+              name="protweets"
+            />
+            <CaseStudyItem
+              imageSrc={thumbMada}
+              link="https://www.behance.net/gallery/157245147/UX-Research-Case-Study-for-MADA"
+              name="mada"
+            />
+            <CaseStudyItem
+              imageSrc={thumbBeelovedImage}
+              link="https://www.behance.net/gallery/158101341/Custom-Brand-Design-for-client"
+              name="beeloved"
+            />
+            <CaseStudyItem
+              imageSrc={thumbWebsiteRebrandImage}
+              link="https://www.behance.net/gallery/155867613/My-Portfolio-Redesign-2022-Edition"
+              name="portfolio_rework"
+            />
+            <CaseStudyItem
+              imageSrc={thumbLogoDesignImage}
+              link="https://www.behance.net/gallery/156359817/Crafting-My-Personal-Logo"
+              name="personal_logo"
+            />
+          </div>
+          {/* <div className={styles.workItem}>
             <a onClick={() => this.workToggle("uxui")}>UX/UI</a>
             {caseStudy.uxui ? (
               <div className={styles.caseStudyContainer}>
@@ -255,41 +297,11 @@ class Home extends React.Component {
                 />
               </div>
             ) : null}
-          </div>
-          {/*
-          <div className={styles.workItem}>
-            <a onClick={() => this.workToggle('form')}>
-              Form Design
-            </a>
-            {
-              caseStudy.form ? (
-                <div className={styles.caseStudyContainer}>
-                  <CaseStudyItem
-                    imageSrc={thumbComingSoonImage}
-                  />
-                </div>
-              ) : null
-            }
-          </div>
-          <div className={styles.workItem}>
-            <a onClick={() => this.workToggle('icon')}>
-              Iconography
-            </a>
-            {
-              caseStudy.icon ? (
-                <div className={styles.caseStudyContainer}>
-                  <CaseStudyItem
-                    imageSrc={thumbComingSoonImage}
-                  />
-                </div>
-              ) : null
-            }
-          </div>
-          */}
+          </div> */}
         </section>
 
         <section className={styles.aboutMe} ref={this.about}>
-          <h2 className={`${styles.aboutMeHeader} ${styles.restrict1440}`}>
+          <h2 className={`${styles.header} ${styles.restrict1440}`}>
             About me
           </h2>
           <div className={styles.aboutMeContent}>
@@ -314,12 +326,12 @@ class Home extends React.Component {
                   by<span className={styles.byTextRight}>human needs</span>
                 </span>
               </div>
-              <div
+              {/* <div
                 className={styles.aboutMeImageContainer}
                 style={{ top: `${aboutSectionImageOffset}px` }}
               >
                 <img className={styles.aboutImage} src={aboutSuImage} />
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -330,7 +342,7 @@ class Home extends React.Component {
             Every great design begins <br />
             with an even greater story.
           </div>
-          <div className={styles.myStorySubHeader}>Lorinda Mamo</div>
+          <div className={styles.myStorySubHeader}>- Lorinda Mamo</div>
 
           <div className={styles.myStoryContainer}>
             <div className={styles.myStoryLeft}>
@@ -468,18 +480,6 @@ class Home extends React.Component {
           </div>
         </section>
 
-        <div className={styles.resumeButtonContainer}>
-          <a
-            onClick={this.trackHomeResumeClick}
-            className={styles.resumeButton}
-            target="_blank"
-            rel="noopener noreferrer"
-            href={resumeFile}
-          >
-            Download my resume
-          </a>
-        </div>
-
         <div className={styles.connectTextContainer} ref={this.contact}>
           <div className={`${styles.connectText} ${styles.restrict1440}`}>
             Let&apos;s Connect
@@ -487,20 +487,22 @@ class Home extends React.Component {
         </div>
 
         <div className={`${styles.feedbackContainer} ${styles.restrict1440}`}>
-          <div className={styles.feedbackHeader}>
-            Got feedback or a cool project you want to explore with me? - I’d 💛
-            to hear from you!
-          </div>
-          <div className={styles.emailContainer}>
-            <a
-              onClick={this.trackHomeEmailClick}
-              className={styles.emailText}
-              href="mailto:suchinUX@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              suchinUX@gmail.com
-            </a>
+          <div>
+            <div className={styles.feedbackHeader}>
+              Got feedback or a cool project you want to explore with me? - I’d
+              💛 to hear from you!
+            </div>
+            <div className={styles.resumeButtonContainer}>
+              <a
+                onClick={this.trackHomeResumeClick}
+                className={styles.resumeButton}
+                target="_blank"
+                rel="noopener noreferrer"
+                href={resumeFile}
+              >
+                Download my resume
+              </a>
+            </div>
           </div>
         </div>
       </div>
