@@ -393,11 +393,11 @@ class Home extends React.Component {
           </div>
         </section>
 
-        <div className={styles.myMethodContainer}>
+        {/* <div className={styles.myMethodContainer}>
           <img className={styles.myMethodImage} src={myMethodImage} />
-        </div>
+        </div> */}
 
-        <section className={`${styles.myMethods} ${styles.restrict1440}`}>
+        {/* <section className={`${styles.myMethods} ${styles.restrict1440}`}>
           <div className={styles.methodText}>
             DIS <br />
             COV <br />
@@ -423,7 +423,7 @@ class Home extends React.Component {
             LUA <br />
             TE
           </div>
-        </section>
+        </section> */}
 
         <section className={styles.restrict1440}>
           <h2 className={styles.skillsHeader}>Skills</h2>

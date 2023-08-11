@@ -1,5 +1,5 @@
 .footer {
-  background: var(--volt);
+  background: var(--brand-color);
   text-align: center;
   font-weight: var(--font-weight-700);
   padding: 75px 20px;
@@ -7,7 +7,7 @@
 
 .header {
   font-size: var(--font-size-regular);
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   line-height: 32px;
   text-transform: uppercase;
 }
@@ -33,5 +33,4 @@
 }
 
 @media (max-width: 768px) {
-
 }

@@ -21,17 +21,18 @@
 
 .wallImageContainer {
   margin-top: 140px;
-  max-height: 1000px;
+  text-align: center;
   overflow: hidden;
   position: relative;
 }
 
 .wallImage {
   width: 100%;
-  height: 100%;
   object-fit: cover;
+  object-position: top;
   top: 0;
   left: 0;
+  position: relative;
 }
 
 .worksHeader {
@@ -92,7 +93,7 @@
 }
 
 .aboutMeContent {
-  background: var(--volt);
+  background: var(--brand-color);
   display: flex;
   justify-content: center; /* Horizontally center */
   align-items: center; /* Vertically center */
@@ -192,7 +193,6 @@
 .storyRightHeader {
   font-weight: var(--font-weight-400);
   font-size: 30px;
-  line-height: 60px;
 }
 
 .storyText {
@@ -233,12 +233,12 @@
 .toolsHeader {
   text-transform: uppercase;
   font-weight: var(--font-weight-700);
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-large);
   line-height: 24px;
 }
 
 .skillsHeader {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .toolsHeader {
@@ -255,7 +255,7 @@
   display: block;
   width: 96px;
   height: 96px;
-  background: var(--volt);
+  background: var(--brand-color);
 }
 
 .resumeButtonContainer {
