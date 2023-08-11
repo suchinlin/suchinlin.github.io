@@ -214,11 +214,11 @@ class Home extends React.Component {
               link="https://www.behance.net/gallery/156368307/iOS-Health-Tracker-App"
               name="health_tracker"
             />
-            <CaseStudyItem
+            {/* <CaseStudyItem
               imageSrc={thumbProTweetsImage}
               link="https://www.behance.net/gallery/156366863/Protweets-Feature-Design-Concept"
               name="protweets"
-            />
+            /> */}
             <CaseStudyItem
               imageSrc={thumbMada}
               link="https://www.behance.net/gallery/157245147/UX-Research-Case-Study-for-MADA"
