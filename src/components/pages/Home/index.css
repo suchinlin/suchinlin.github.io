@@ -71,8 +71,12 @@
   margin-bottom: 150px;
 }
 
+.letsConnect {
+  margin-top: 170px;
+}
+
 .caseStudyItem {
-  flex-basis: calc(25% - 20px);
+  flex-basis: calc(33.3% - 20px);
   margin: 10px;
   line-height: 0;
 }
@@ -192,7 +196,8 @@
 
 .storyRightHeader {
   font-weight: var(--font-weight-400);
-  font-size: 30px;
+  margin-top: 60px;
+  font-size: var(--font-size-small);
 }
 
 .storyText {
@@ -238,7 +243,7 @@
 }
 
 .skillsHeader {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .toolsHeader {
@@ -259,7 +264,6 @@
 }
 
 .resumeButtonContainer {
-  text-align: center;
   margin-top: 100px;
 }
 
@@ -296,10 +300,8 @@
 }
 
 .feedbackContainer {
-  padding: 250px 0;
-  display: flex;
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
+  margin-top: 104px;
+  margin-bottom: 208px;
 }
 
 .feedbackHeader {
@@ -410,7 +412,7 @@
   }
 
   .caseStudyItem {
-    flex: 1 1 calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
     margin: 15px;
   }
 }

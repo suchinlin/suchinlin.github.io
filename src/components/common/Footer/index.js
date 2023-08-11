@@ -16,26 +16,22 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.header}>THANKS FOR COMING BY!</div>
-
-      <div className={styles.socialContainer}>
-        <a
-          onClick={trackBehanceFooterClick}
-          href="https://www.behance.net/suchinux"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Svg className={styles.socialIcon} image="behance" />
-        </a>
-        <a
-          onClick={trackLinkedinFooterClick}
-          href="https://www.linkedin.com/in/suchinlin"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Svg className={styles.socialIcon} image="linkedin" />
-        </a>
-      </div>
+      <a
+        onClick={trackBehanceFooterClick}
+        href="https://www.behance.net/suchinux"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Svg className={styles.socialIcon} image="behance" />
+      </a>
+      <a
+        onClick={trackLinkedinFooterClick}
+        href="https://www.linkedin.com/in/suchinlin"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Svg className={styles.socialIcon} image="linkedin" />
+      </a>
     </footer>
   );
 };

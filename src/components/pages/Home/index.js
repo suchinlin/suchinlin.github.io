@@ -180,10 +180,13 @@ class Home extends React.Component {
     return (
       <div className={styles.home}>
         <h1 className={`${styles.header} ${styles.restrict1440}`}>
-          Hello! I&apos;m Suchin Lin, a UX Designer. <br />
-          And, I&apos;m bringing my love & passion for helping people with{" "}
-          <span className={styles.thoughtful}>thoughtful</span> solutions from
-          healthcare to now design.
+          Hello, I&apos;m Suchin Lin.
+          <br />
+          And, I produce <span className={styles.thoughtful}>
+            thoughtful
+          </span>{" "}
+          design solutions that bring care and consideration of people to the
+          forefront.
         </h1>
 
         <div className={styles.wallImageContainer}>
@@ -226,11 +229,11 @@ class Home extends React.Component {
               link="https://www.behance.net/gallery/158101341/Custom-Brand-Design-for-client"
               name="beeloved"
             />
-            <CaseStudyItem
+            {/* <CaseStudyItem
               imageSrc={thumbWebsiteRebrandImage}
               link="https://www.behance.net/gallery/155867613/My-Portfolio-Redesign-2022-Edition"
               name="portfolio_rework"
-            />
+            /> */}
             <CaseStudyItem
               imageSrc={thumbLogoDesignImage}
               link="https://www.behance.net/gallery/156359817/Crafting-My-Personal-Logo"
@@ -304,7 +307,7 @@ class Home extends React.Component {
           <h2 className={`${styles.header} ${styles.restrict1440}`}>
             About me
           </h2>
-          <div className={styles.aboutMeContent}>
+          {/* <div className={styles.aboutMeContent}>
             <div
               className={`${styles.aboutMeTextContainer} ${styles.restrict1440}`}
             >
@@ -326,31 +329,30 @@ class Home extends React.Component {
                   by<span className={styles.byTextRight}>human needs</span>
                 </span>
               </div>
-              {/* <div
+              <div
                 className={styles.aboutMeImageContainer}
                 style={{ top: `${aboutSectionImageOffset}px` }}
               >
                 <img className={styles.aboutImage} src={aboutSuImage} />
-              </div> */}
+              </div>
             </div>
-          </div>
+          </div> */}
         </section>
 
         <section className={`${styles.myStory} ${styles.restrict1440}`}>
-          <Svg className={styles.quoteSvg} image="quoteYellow" />
-          <div className={styles.myStoryHeader}>
-            Every great design begins <br />
-            with an even greater story.
-          </div>
-          <div className={styles.myStorySubHeader}>- Lorinda Mamo</div>
-
           <div className={styles.myStoryContainer}>
             <div className={styles.myStoryLeft}>
               <img className={styles.nycImage} src={nycImage} />
             </div>
             <div className={styles.myStoryRight}>
+              <Svg className={styles.quoteSvg} image="quoteYellow" />
+              <div className={styles.myStoryHeader}>
+                Every great design begins <br />
+                with an even greater story.
+              </div>
+              <div className={styles.myStorySubHeader}>- Lorinda Mamo</div>
               <div className={styles.storyRightHeader}>
-                <strong className={styles.myStoryTitle}>MY STORY</strong> begins
+                <strong className={styles.myStoryTitle}>My Story</strong> begins
                 in New York City.
               </div>
               <p className={styles.storyText}>
@@ -480,29 +482,23 @@ class Home extends React.Component {
           </div>
         </section>
 
-        <div className={styles.connectTextContainer} ref={this.contact}>
-          <div className={`${styles.connectText} ${styles.restrict1440}`}>
-            Let&apos;s Connect
-          </div>
-        </div>
+        <h2
+          className={`${styles.header} ${styles.letsConnect} ${styles.restrict1440}`}
+        >
+          Let&apos;s Connect
+        </h2>
 
         <div className={`${styles.feedbackContainer} ${styles.restrict1440}`}>
-          <div>
-            <div className={styles.feedbackHeader}>
-              Got feedback or a cool project you want to explore with me? - I’d
-              💛 to hear from you!
-            </div>
-            <div className={styles.resumeButtonContainer}>
-              <a
-                onClick={this.trackHomeResumeClick}
-                className={styles.resumeButton}
-                target="_blank"
-                rel="noopener noreferrer"
-                href={resumeFile}
-              >
-                Download my resume
-              </a>
-            </div>
+          <div className={styles.resumeButtonContainer}>
+            <a
+              onClick={this.trackHomeResumeClick}
+              className={styles.resumeButton}
+              target="_blank"
+              rel="noopener noreferrer"
+              href={resumeFile}
+            >
+              Download my resume
+            </a>
           </div>
         </div>
       </div>

@@ -2,7 +2,10 @@
   background: var(--brand-color);
   text-align: center;
   font-weight: var(--font-weight-700);
-  padding: 75px 20px;
+  padding: 25px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -29,7 +32,6 @@
 .socialIcon {
   width: 30px;
   margin: 0 13px;
-  margin-top: var(--margin-50);
 }
 
 @media (max-width: 768px) {
