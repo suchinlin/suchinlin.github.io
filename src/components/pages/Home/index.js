@@ -483,7 +483,7 @@ class Home extends React.Component {
         </section>
 
         <h2
-          className={`${styles.header} ${styles.letsConnect} ${styles.restrict1440}`}
+          className={`${styles.header} ${styles.restrict1440} ${styles.letsConnect}`}
         >
           Let&apos;s Connect
         </h2>

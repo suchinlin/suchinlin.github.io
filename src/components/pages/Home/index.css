@@ -322,6 +322,10 @@
     padding: 0 60px;
   }
 
+  .letsConnect {
+    margin-top: 170px;
+  }
+
   .header {
     font-size: 40px;
     line-height: 52px;
@@ -389,11 +393,6 @@
     display: block;
   }
 
-  .storyRightHeader {
-    font-size: 24px;
-    line-height: 30px;
-  }
-
   .connectText {
     padding: 84px 60px;
     font-size: 80px;
@@ -418,9 +417,23 @@
 }
 
 @media (max-width: 768px) {
+  .skillsHeader,
+  .toolsHeader {
+    font-size: var(--font-size-regular);
+  }
   .restrict1440 {
     margin: 0 auto;
     padding: 0 20px;
+  }
+
+  .wallImage {
+    height: 200px;
+  }
+
+  .myStoryHeader {
+    font-size: var(--font-size-regular);
+    line-height: 28px;
+    margin-top: 0;
   }
 
   .wallImageContainer {
@@ -430,6 +443,10 @@
   .header {
     font-size: 30px;
     line-height: 36px;
+  }
+
+  .letsConnect {
+    margin-top: 100px;
   }
 
   .worksContainer {
@@ -495,11 +512,6 @@
 
   .myStoryTitle {
     display: block;
-  }
-
-  .storyRightHeader {
-    font-size: 24px;
-    line-height: 30px;
   }
 
   .methodText {
