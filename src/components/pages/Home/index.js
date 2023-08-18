@@ -483,6 +483,7 @@ class Home extends React.Component {
         </section>
 
         <h2
+          ref={this.contact}
           className={`${styles.header} ${styles.restrict1440} ${styles.letsConnect}`}
         >
           Let&apos;s Connect
