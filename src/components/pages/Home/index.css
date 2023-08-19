@@ -67,7 +67,6 @@
 .caseStudyContainerFlex {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 70px;
   margin-bottom: 150px;
 }
 
@@ -157,7 +156,7 @@
 }
 
 .myStory {
-  margin-top: 104px;
+  margin-top: 52px;
   position: relative;
   z-index: 2;
 }
@@ -182,7 +181,7 @@
 
 .myStoryContainer {
   display: flex;
-  margin-top: 100px;
+  margin-top: 52px;
 }
 
 .myStoryLeft {
@@ -264,7 +263,6 @@
 }
 
 .resumeButtonContainer {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -308,7 +306,7 @@
 }
 
 .feedbackContainer {
-  margin-top: 104px;
+  margin-top: 52px;
   margin-bottom: 208px;
 }
 
@@ -380,7 +378,7 @@
   }
 
   .myStory {
-    margin-top: 104px;
+    margin-top: 52px;
   }
 
   .myStoryContainer {
@@ -496,7 +494,7 @@
   }
 
   .myStory {
-    margin-top: 104px;
+    margin-top: 52px;
   }
 
   .myStoryContainer {
@@ -560,7 +558,7 @@
   }
 
   .feedbackContainer {
-    margin-top: 84px;
+    margin-top: 42px;
     margin-bottom: 150px;
   }
 

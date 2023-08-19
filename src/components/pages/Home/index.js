@@ -488,11 +488,6 @@ class Home extends React.Component {
         >
           Let&apos;s Connect
         </h2>
-        {/* <div className={`${styles.restrict1440}`}>
-          <a className={styles.resumeButton} href="mailto:suchinUX@gmail.com">
-            suchinUX@gmail.com
-          </a>
-        </div> */}
 
         <div className={`${styles.feedbackContainer} ${styles.restrict1440}`}>
           <div className={styles.resumeButtonContainer}>
