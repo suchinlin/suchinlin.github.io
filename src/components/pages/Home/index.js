@@ -7,18 +7,13 @@ import Svg from "components/common/Svg";
 
 import resumeFile from "assets/suchin_lin_resume.pdf";
 import wallImage from "assets/images/wall.png";
-import aboutSuImage from "assets/images/about_su.png";
 import nycImage from "assets/images/nyc.png";
-import myMethodImage from "assets/images/my_method.png";
 import thumbMada from "assets/images/thumb_mada.png";
-import thumbWebsiteRebrandImage from "assets/images/thumb_website_rebrand.png";
 import thumbHealthTrackerImage from "assets/images/thumb_health_tracker.png";
-import thumbLogoDesignImage from "assets/images/thumb_logo_design.png";
-import thumbProTweetsImage from "assets/images/thumb_pro_tweets.png";
 import thumbBeelovedImage from "assets/images/thumb_beeloved.png";
 import thumbDiscordImage from "assets/images/thumb_discord.png";
 import thumbHealthProfileCardImage from "assets/images/thumb_health_profile_card.png";
-// import thumbComingSoonImage from "assets/images/thumb_coming_soon.png";
+import thumbGlobeSurferImage from "assets/images/thumb_globe_surfer.png";
 
 import styles from "./index.css";
 
@@ -200,44 +195,34 @@ class Home extends React.Component {
           <h1 className={`${styles.header}`}>Works</h1>
           <div className={styles.caseStudyContainerFlex}>
             <CaseStudyItem
-              imageSrc={thumbHealthProfileCardImage}
-              link="https://www.behance.net/gallery/171729807/Health-Profile-Card-Case-Study"
-              name="health_profile_card"
-            />
-            <CaseStudyItem
-              imageSrc={thumbDiscordImage}
-              link="https://www.behance.net/gallery/163441563/Discord-Dashboard-Concept"
-              name="discord"
+              imageSrc={thumbGlobeSurferImage}
+              link="https://www.behance.net/gallery/181202315/Globesurfers"
+              name="globesurfer"
             />
             <CaseStudyItem
               imageSrc={thumbHealthTrackerImage}
               link="https://www.behance.net/gallery/156368307/iOS-Health-Tracker-App"
               name="health_tracker"
             />
-            {/* <CaseStudyItem
-              imageSrc={thumbProTweetsImage}
-              link="https://www.behance.net/gallery/156366863/Protweets-Feature-Design-Concept"
-              name="protweets"
-            /> */}
             <CaseStudyItem
               imageSrc={thumbMada}
               link="https://www.behance.net/gallery/157245147/UX-Research-Case-Study-for-MADA"
               name="mada"
             />
             <CaseStudyItem
+              imageSrc={thumbHealthProfileCardImage}
+              link="https://www.behance.net/gallery/171729807/Health-Profile-Card-Case-Study"
+              name="health_profile_card"
+            />
+            <CaseStudyItem
               imageSrc={thumbBeelovedImage}
               link="https://www.behance.net/gallery/158101341/Custom-Brand-Design-for-client"
               name="beeloved"
             />
-            {/* <CaseStudyItem
-              imageSrc={thumbWebsiteRebrandImage}
-              link="https://www.behance.net/gallery/155867613/My-Portfolio-Redesign-2022-Edition"
-              name="portfolio_rework"
-            /> */}
             <CaseStudyItem
-              imageSrc={thumbLogoDesignImage}
-              link="https://www.behance.net/gallery/156359817/Crafting-My-Personal-Logo"
-              name="personal_logo"
+              imageSrc={thumbDiscordImage}
+              link="https://www.behance.net/gallery/163441563/Discord-Dashboard-Concept"
+              name="discord"
             />
           </div>
           {/* <div className={styles.workItem}>
