@@ -200,9 +200,9 @@ class Home extends React.Component {
               name="globesurfer"
             />
             <CaseStudyItem
-              imageSrc={thumbHealthTrackerImage}
-              link="https://www.behance.net/gallery/156368307/iOS-Health-Tracker-App"
-              name="health_tracker"
+              imageSrc={thumbBeelovedImage}
+              link="https://www.behance.net/gallery/158101341/Custom-Brand-Design-for-client"
+              name="beeloved"
             />
             <CaseStudyItem
               imageSrc={thumbMada}
@@ -210,14 +210,14 @@ class Home extends React.Component {
               name="mada"
             />
             <CaseStudyItem
+              imageSrc={thumbHealthTrackerImage}
+              link="https://www.behance.net/gallery/156368307/iOS-Health-Tracker-App"
+              name="health_tracker"
+            />
+            <CaseStudyItem
               imageSrc={thumbHealthProfileCardImage}
               link="https://www.behance.net/gallery/171729807/Health-Profile-Card-Case-Study"
               name="health_profile_card"
-            />
-            <CaseStudyItem
-              imageSrc={thumbBeelovedImage}
-              link="https://www.behance.net/gallery/158101341/Custom-Brand-Design-for-client"
-              name="beeloved"
             />
             <CaseStudyItem
               imageSrc={thumbDiscordImage}
